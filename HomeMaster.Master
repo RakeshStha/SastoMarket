@@ -1,0 +1,275 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="SastoMarket.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!--Mulish FOnts-->
+     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
+    <!--Icons-->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="overlay"></div>
+
+                <div class="utility-nav d-none d-md-block">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <p class="small"><i class="bx bx-envelope"></i> sastomarket@sastomarket.com | <i class="bx bx-phone"></i> +977-9812345678
+                        </p>
+                      </div>
+
+                      <div class="col-12 col-md-6 text-right">
+                        <p class="small">Free shipping on total of Rs 999 of all products</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <nav class="navbar navbar-expand-md navbar-light bg-light main-menu" style="box-shadow:none">
+                  <div class="container">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
+                                <i class="bx bx-menu icon-single"></i>
+                            </button>
+
+                    <a class="navbar-brand" href="home.aspx">
+                      <h4 class="font-weight-bold logo"><img src="img/Logo_Navbar_.png" alt="Company_Logo"></h4> 
+                    </a>
+
+                    <ul class="navbar-nav ml-auto d-block d-md-none">
+                      <li class="nav-item">
+                       <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
+                      </li>
+                    </ul>
+
+                    <div class="collapse navbar-collapse">
+                      <form class="form-inline my-2 my-lg-0 mx-auto">
+                        <input class="form-control" type="search" placeholder="Search for products..." aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0" type="submit"><i class="bx bx-search"></i></button>
+                      </form>
+
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
+                        </li>
+                        <li class="nav-item ml-md-3">
+                          <a class="btn btn-primary" href="#"><i class="bx bxs-user-circle mr-1"></i> Log In / Register</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </nav>
+
+                <nav class="navbar navbar-expand-md navbar-light bg-light sub-menu">
+                  <div class="container">
+                    <div class="collapse navbar-collapse" id="navbar">
+                      <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="home.aspx">All Catagories <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="collection.aspx">Global Collection</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="gadgets.aspx">Gadgets</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="wears.aspx">Wears</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="fashion.aspx">Fashion</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="kitchen.aspx">Kitchens</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.aspx">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+
+                <div class="search-bar d-block d-md-none">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <form class="form-inline mb-3 mx-auto">
+                          <input class="form-control" type="search" placeholder="Search for products..." aria-label="Search">
+                          <button class="btn btn-success" type="submit"><i class="bx bx-search"></i></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sidebar -->
+                <nav id="sidebar">
+                  <div class="sidebar-header">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-10 pl-0">
+                          <a class="btn btn-primary" href="login.aspx"><i class="bx bxs-user-circle mr-1"></i> Log In</a>
+                        </div>
+
+                        <div class="col-2 text-left">
+                          <button type="button" id="sidebarCollapseX" class="btn btn-link">
+                                            <i class="bx bx-x icon-single"></i>
+                                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="list-unstyled components links">
+                    <li class="active">
+                      <a href="home.aspx"><i class="bx bx-home mr-3"></i> Home</a>
+                    </li>
+                     <li>
+                      <a href="collection.aspx"><i class="bx bx-carousel mr-3"></i>All Products</a>
+                    </li>
+                    
+                    <li>
+                      <a href="login.aspx"><i class="bx bx-crown mr-3"></i> Login</a>
+                    </li>
+                    
+                    <li>
+                      <a href="contact.aspx"><i class="bx bx-phone mr-3"></i>Contact Us</a>
+                    </li>
+                  </ul>
+
+                  <h6 class="text-uppercase mb-1">Categories</h6>
+                  <ul class="list-unstyled components mb-3">
+                     <li>
+                      <a href="fashion.aspx">Fashion</a>
+                    </li>
+                     <li>
+                      <a href="gadgets.aspx">Gadgets</a>
+                    </li>
+                    <li>
+                      <a href="kitchen.aspx">Kitchens</a>
+                    </li>
+                    <li>
+                      <a href="electronics.aspx">Electronics</a>
+                    </li>
+                    
+                  </ul>
+
+                  <ul class="social-icons">
+                    <li><a href="#" target="_blank" title=""><i class="bx bxl-facebook-square"></i></a></li>
+                    <li><a href="#" target="_blank" title=""><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" title=""><i class="bx bxl-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank" title=""><i class="bx bxl-instagram"></i></a></li>
+                  </ul>
+                </nav>
+
+            <!--Body-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!---Body end--->
+
+
+            <!--Footer-->
+                <div class="conatiner-fluid footer-background">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">Let Us Help</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">What We Offer</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">Our Company</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">Our Policies</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+                    var coll = document.getElementsByClassName("footer-collapsible");
+                    var i;
+        
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                  </script>
+    
+    
+    
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-sm-4 text-center">
+                        <h4 class="footer-title">Connect With Us</h4>
+                          <div class="icon-social-icons">
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-facebook-square" style="font-size:45px; color: #3B5998 ;"></i></a></div>
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-twitter" style="font-size:45px; color: #00ACEE ;"></i></a></div>
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-linkedin" style="font-size:45px; color: #0E76A8 ;"></i></a></div>
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-instagram" style="font-size:45px; color: #405DE6 ;"></i></a></div>
+                          </div>
+                          <p class="footer-paragraph">Ideas and Advice.</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <h4 class="footer-title">SignUp to buy the product you want</h4>
+                        <div class="footer-signup">
+                         <a href="Normal_User/register.aspx"> <button class="btn btn-default "><span class="footer-signup-btn">SignUp</span></button> </a>
+                        </div>
+                          <p class="footer-paragraph">Refer a friend and get Rs 200 OFF.</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <h4 class="footer-title">Rely on Khalti</h4>
+                        <p class="footer-paragraph">Absolutely Guaranteed </p>
+                        <p class="footer-paragraph">Everytime. Any reason: Or we'll make it right</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid footer-background">
+                    <p class="text-center  footer-end"> &copy; SastoMarket All Right Reserved 2021</p>
+                  </div>
+
+        </div>
+    </form>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

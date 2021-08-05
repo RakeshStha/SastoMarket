@@ -1,0 +1,65 @@
+﻿
+.side-login-1 {
+    text-align: center;
+    padding: 20px;
+}
+
+    .side-login-1 h2 {
+        font-family: 'Mulish';
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .side-login-1 img {
+        width: 20rem;
+    }
+
+.side-login-2 {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+
+.form-login {
+    padding: 30px;
+}
+
+.form-label-login {
+    font-weight: 700;
+    font-family: 'Mulish';
+    font-size: 21px;
+}
+
+    .form-label-login input::placeholder {
+        font-weight: 700;
+        font-family: 'Mulish';
+        font-size: 21px;
+    }
+
+
+.login-below-text {
+    text-align: center;
+    color: #565353;
+    font-size: 19px;
+    font-family: 'Mulish';
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.start-shopping {
+    font-weight: 700;
+    padding: 10px;
+    background: #FFFFFF;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.login-to-singup {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2475FB;
+}
