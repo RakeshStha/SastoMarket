@@ -4,13 +4,13 @@
     padding: 20px;
 }
 
-    .side-login-1 h2 {
+.side-login-1 h2 {
         font-family: 'Mulish';
         font-weight: 700;
-        font-size: 40px;
+        
     }
 
-    .side-login-1 img {
+.side-login-1 img {
         width: 20rem;
     }
 
@@ -31,7 +31,7 @@
     font-size: 21px;
 }
 
-    .form-label-login input::placeholder {
+.form-label-login input::placeholder {
         font-weight: 700;
         font-family: 'Mulish';
         font-size: 21px;
@@ -55,8 +55,6 @@
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-
 
 .login-to-singup {
     font-weight: 700;

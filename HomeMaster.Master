@@ -25,7 +25,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="home">
             <div class="overlay"></div>
 
                 <div class="utility-nav d-none d-md-block">
@@ -71,7 +71,7 @@
                           <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
                         </li>
                         <li class="nav-item ml-md-3">
-                          <a class="btn btn-primary" href="#"><i class="bx bxs-user-circle mr-1"></i> Log In / Register</a>
+                          <a class="btn btn-primary" href="login.aspx"><i class="bx bxs-user-circle mr-1"></i> Log In / Register</a>
                         </li>
                       </ul>
                     </div>

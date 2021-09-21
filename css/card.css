@@ -1,8 +1,5 @@
 ﻿/*card*/
-img {
-    height: 6rem;
-    width: 100%;
-}
+
 /* .icon i{
     font-size:20px;
     color:#ffa710;
@@ -14,6 +11,10 @@ img {
     padding-bottom: 2px;
     cursor: pointer;
     transition: all .4s ease-in-out;
+}
+.card img {
+    height: 6rem;
+    width: 100%;
 }
 
 .card-title {
@@ -27,24 +28,6 @@ img {
     transform: scale(1.05);
     box-shadow: 10px 10px 10px #888888;
 }
-/* .icon i:hover{
-    transform:scale(1.25) rotate(100deg);
-    color:#18d4ca;
-  } */
-
-/* .img-buttons .material-icons{
-    opacity: 0;
-    color: rgba(50, 50, 50, 0.9);
-    background: rgb(256, 256, 256);
-    font-size: 30px;
-        text-align: center;
-        text-decoration: none;
-    border-radius: 50%;
-  } */
-/* .modal-logo:hover .img-buttons .material-icons{
-      opacity: 1;
-    } */
-/* MODAL ANIMATION */
 
 @keyframes bounce {
     from, 20%, 53%, 80%, to {
@@ -130,7 +113,7 @@ img {
 }
 
 @media screen and (max-width: 900px) {
-    img {
+   .card img {
         height: 13rem;
         width: 100%;
     }

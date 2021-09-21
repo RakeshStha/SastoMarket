@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="SastoMarket.home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Home</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/card.css">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <!--Body-->
+    <div class="home_bdy">
                 <!--Advertisement Banner-->
                     <div class="Banner p-5">
                         <div class="container">
@@ -24,6 +25,7 @@
                             </div>
                         </div>
                     </div>
+
                 <!--Browser Categories-->
                 <div class="container-fluid home_catagories_background">
                     <div class="container">
@@ -137,6 +139,7 @@
               
                     </div>
                 </div>
+        </div>
             <!--End of Body-->
 
 </asp:Content>

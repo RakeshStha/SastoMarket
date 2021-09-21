@@ -9,9 +9,9 @@
     <div class="container-fluid">
      <div class="row">
       <div class="col-sm-6 p-5">
-        <p class="text-center h1">Contact Us</p>
+        <p class="text-center hd">Contact Us</p>
         <p class="text-start info">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur. rat vel eaque perferendis ipsam </p>
-        <form class="contact-form">
+        <form class="contact-forms">
             <div class="form-group">
             <input type="email" class="form-control" id="Email" placeholder="Enter email">
             </div>

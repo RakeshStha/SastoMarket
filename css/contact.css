@@ -3,7 +3,7 @@
     padding-top: 3rem;
 }
 
-.h1 {
+.hd {
     font-size: 3.54rem;
     margin-bottom: 2rem;
 }
@@ -12,7 +12,7 @@
     font-size: 1.5rem;
 }
 
-.contact-form .form-control {
+.contact-forms .form-control {
     height: 4rem;
     /* border: solid rgb(80, 78, 78); */
     margin-bottom: 2rem;
@@ -24,6 +24,6 @@
     font-size: 1.3rem;
 }
 
-.contact-form {
+.contact-forms {
     padding-bottom: 50px;
 }
