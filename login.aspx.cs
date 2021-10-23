@@ -19,8 +19,10 @@ namespace SastoMarket
 
             protected void Login_Btn(object sender, EventArgs e)
             {
-            //Implementing try and catch
-            try
+            if(Username.Text != "" && Password.Text != "")
+            {
+                //Implementing try and catch
+                try
                 {
 
                     User u = new User();
@@ -50,8 +52,14 @@ namespace SastoMarket
                 catch (Exception ex)
                 {
                     //ltrMessage.Text = ex.Message;
-                ltrMessage.Text = "Invalid Username or Password";
+                    ltrMessage.Text = "Invalid Username or Password";
                 }
+            }
+            else
+            {
+                ltrMessage.Text = "Plese fill all inputs.";
+            }
+           
 
             
         }

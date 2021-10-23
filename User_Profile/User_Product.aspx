@@ -9,5 +9,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <h1>User Product</h1>
+    <div class="container">
+         <h1> User product</h1>
+    
+    </div>
 </asp:Content>
