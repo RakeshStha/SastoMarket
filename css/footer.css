@@ -1,0 +1,66 @@
+﻿
+/*Footer*/
+ .home .footer-background {
+    background-color: rgba(196, 196, 196, 0.41);
+}
+
+.home .footer-collapsible {
+    padding: 30px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 19px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+    .home .footer-collapsible:hover {
+        background-color: #e78200;
+    }
+
+.home .footer-content {
+    padding: 8px;
+    display: none;
+    font-family: 'Mulish';
+    font-size: 21px;
+}
+
+.home .footer-title {
+    padding: 30px;
+    padding-bottom: 10px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.home .icon-social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.home .footer-signup-btn {
+    font-weight: 700;
+    font-family: 'Mulish';
+    font-size: 21px;
+    padding: 2px 10px 2px 10px;
+}
+
+ .footer-signup button:hover {
+    background-color: #007bff;
+}
+
+.home .footer-paragraph {
+    padding: 8px;
+    font-family: 'Mulish';
+    font-size: 17px;
+}
+
+.home .footer-end {
+    margin: 0px;
+    padding: 15px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 17px;
+    /* color: #E78200; */
+}

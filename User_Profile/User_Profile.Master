@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User_Profile.master.cs" Inherits="SastoMarket.User_Profile.User_Profile" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Mulish FOnts-->
+     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+
+    <link href="../css/footer.css" rel="stylesheet" />
+   
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Icons-->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.2/css/boxicons.min.css">
+    <style>
+        .navbar{
+            font-family:"Mulish"
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#"><img src="../img/Logo_Navbar_.png" width="250px" height="90px"/></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="user_profile.aspx"><span class="active_profile" style="font-weight:600; font-size:18px;">Profile</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="User_Product.aspx"><span class="active_product" style="font-weight:600; font-size:18px;">Product</span></a>
+                      </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="Invoice.aspx"><span class="active_invoice" style="font-weight:600; font-size:18px;">Invoice</span></a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="Status.aspx"><span class="active_status" style="font-weight:600; font-size:18px;">Status</span></a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="History.aspx"><span class="active_history" style="font-weight:600; font-size:18px;">History</span></a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </nav>
+
+            <!---Start of body--->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--End of body-->
+
+              <!--Footer-->
+            <div class="home">
+                <div class="conatiner-fluid footer-background">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">Let Us Help</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">What We Offer</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">Our Company</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <button type="button" class=" footer-collapsible">Our Policies</button>
+                            <div class="footer-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+                      var coll = document.getElementsByClassName("footer-collapsible");
+                      var i;
+
+                      for (i = 0; i < coll.length; i++) {
+                          coll[i].addEventListener("click", function () {
+                              this.classList.toggle("active");
+                              var content = this.nextElementSibling;
+                              if (content.style.display === "block") {
+                                  content.style.display = "none";
+                              } else {
+                                  content.style.display = "block";
+                              }
+                          });
+                      }
+                  </script>
+    
+    
+    
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-sm-4 text-center">
+                        <h4 class="footer-title">Connect With Us</h4>
+                          <div class="icon-social-icons">
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-facebook-square" style="font-size:45px; color: #3B5998 ;"></i></a></div>
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-twitter" style="font-size:45px; color: #00ACEE ;"></i></a></div>
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-linkedin" style="font-size:45px; color: #0E76A8 ;"></i></a></div>
+                            <div><a href="#" target="_blank" title=""><i class="bx bxl-instagram" style="font-size:45px; color: #405DE6 ;"></i></a></div>
+                          </div>
+                          <p class="footer-paragraph">Ideas and Advice.</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <h4 class="footer-title">SignUp to buy the product you want</h4>
+                        <div class="footer-signup">
+                          <button class="btn btn-default "><a href="signup.aspx"><span class="footer-signup-btn">SignUp</span></a></button>
+                        </div>
+                          <p class="footer-paragraph">Refer a friend and get Rs 200 OFF.</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <h4 class="footer-title">Rely on Khalti</h4>
+                        <p class="footer-paragraph">Absolutely Guaranteed </p>
+                        <p class="footer-paragraph">Everytime. Any reason: Or we'll make it right</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid footer-background">
+                    <p class="text-center  footer-end"> &copy; SastoMarket All Right Reserved 2021</p>
+                  </div>
+            </div>
+        </div>
+    </form>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>

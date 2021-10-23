@@ -11,20 +11,22 @@
       <div class="col-sm-6 p-5">
         <p class="text-center hd">Contact Us</p>
         <p class="text-start info">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur. rat vel eaque perferendis ipsam </p>
-        <form class="contact-forms">
+        <div class="contact-forms">
             <div class="form-group">
-            <input type="email" class="form-control" id="Email" placeholder="Enter email">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" runat="server">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="Full-Name"   placeholder="Enter your Full Name">
+                <input type="text" class="form-control" id="fame"   placeholder="Enter your Full Name" runat="server">
             </div>
             <div class="form-group">
-                <textarea class="form-control" id="Message" rows="7" placeholder="Your Message"></textarea>
+                <textarea class="form-control" id="message" rows="7" placeholder="Your Message" runat="server"></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-clr px-5 py-3">Send</button>
+                <asp:Button ID="Button1"  class="btn btn-clr px-5 py-3" runat="server" Text="Button" OnClick="Unnamed1_Click" />
+
+              
             </div>
-        </form>
+        </div>
       </div>
       <div class="col-sm-6">
         <img src="./img/contact-us/contact us.PNG" alt="Contact us" class="img-fluid">

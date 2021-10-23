@@ -7,17 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SastoMarket
 {
-    public partial class contact : System.Web.UI.Page
+    public partial class Women : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-
-        protected void Unnamed1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("home.aspx");
         }
     }
 }

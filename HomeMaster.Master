@@ -71,7 +71,7 @@
                           <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
                         </li>
                         <li class="nav-item ml-md-3">
-                          <a class="btn btn-primary" href="login.aspx"><i class="bx bxs-user-circle mr-1"></i> Log In / Register</a>
+                          <a class="btn btn-primary active_login_btn" href="login.aspx"><i class="bx bxs-user-circle mr-1"></i> Log In / Register</a>
                         </li>
                       </ul>
                     </div>
@@ -84,26 +84,26 @@
                     <div class="collapse navbar-collapse" id="navbar">
                       <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="home.aspx">All Catagories <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="home.aspx"> <span class="allcatagories">ALL CATAGORIES</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="collection.aspx">Global Collection</a>
+                          <a class="nav-link" href="Kid.aspx"><span class="active_kid">KID</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="gadgets.aspx">Gadgets</a>
+                          <a class="nav-link" href="Women.aspx"><span class="active_women">WOMEN</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="wears.aspx">Wears</a>
+                          <a class="nav-link" href="Men.aspx"><span class="active_men">MEN</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="fashion.aspx">Fashion</a>
+                          <a class="nav-link" href="Beauty.aspx"><span class="active_beauty">BEAUTY</span></a>
                         </li>
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                           <a class="nav-link" href="kitchen.aspx">Kitchens</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="contact.aspx">Contact</a>
-                        </li>
+                        </li>-->
                       </ul>
                     </div>
                   </div>
@@ -253,7 +253,7 @@
                       <div class="col-sm-4 text-center">
                         <h4 class="footer-title">SignUp to buy the product you want</h4>
                         <div class="footer-signup">
-                         <a href="Normal_User/register.aspx"> <button class="btn btn-default "><span class="footer-signup-btn">SignUp</span></button> </a>
+                          <button class="btn btn-default "><a href="signup.aspx"><span class="footer-signup-btn">SignUp</span></a></button>
                         </div>
                           <p class="footer-paragraph">Refer a friend and get Rs 200 OFF.</p>
                       </div>

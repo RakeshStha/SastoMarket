@@ -67,26 +67,87 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_Profile\Add_Product.aspx" />
+    <Content Include="Admin_Profile\Add_User.aspx" />
+    <Content Include="Admin_Profile\css\admin.css" />
+    <Content Include="Admin_Profile\Dashboard.aspx" />
+    <Content Include="Admin_Profile\Order.aspx" />
+    <Content Include="Admin_Profile\Total_User.aspx" />
+    <Content Include="Beauty.aspx" />
     <Content Include="css\card.css" />
     <Content Include="css\contact.css" />
-    <Content Include="collection.aspx" />
     <Content Include="contact.aspx" />
+    <Content Include="css\footer.css" />
     <Content Include="css\home.css" />
     <Content Include="css\login.css" />
     <Content Include="css\navbar.css" />
     <Content Include="home.aspx" />
     <Content Include="js\navbar.js" />
+    <Content Include="Kid.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Men.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="User_Profile\History.aspx" />
+    <Content Include="User_Profile\Invoice.aspx" />
+    <Content Include="User_Profile\Status.aspx" />
+    <Content Include="User_Profile\User_Product.aspx" />
+    <Content Include="User_Profile\user_profile.aspx" />
     <Content Include="Web.config" />
-    <Content Include="login.aspx" />
+    <Content Include="Women.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="collection.aspx.cs">
-      <DependentUpon>collection.aspx</DependentUpon>
+    <Compile Include="Admin_Profile\Add_Product.aspx.cs">
+      <DependentUpon>Add_Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="collection.aspx.designer.cs">
-      <DependentUpon>collection.aspx</DependentUpon>
+    <Compile Include="Admin_Profile\Add_Product.aspx.designer.cs">
+      <DependentUpon>Add_Product.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Profile\Add_User.aspx.cs">
+      <DependentUpon>Add_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile\Add_User.aspx.designer.cs">
+      <DependentUpon>Add_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Profile\Admin_Profile.Master.cs">
+      <DependentUpon>Admin_Profile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile\Admin_Profile.Master.designer.cs">
+      <DependentUpon>Admin_Profile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Profile\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Profile\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Profile\Total_User.aspx.cs">
+      <DependentUpon>Total_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile\Total_User.aspx.designer.cs">
+      <DependentUpon>Total_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beauty.aspx.cs">
+      <DependentUpon>Beauty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beauty.aspx.designer.cs">
+      <DependentUpon>Beauty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bll\Account.cs" />
+    <Compile Include="Bll\Product.cs" />
+    <Compile Include="Bll\User.cs" />
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,6 +155,8 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dao\AccountDao.cs" />
+    <Compile Include="Dao\UserDao.cs" />
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,18 +171,91 @@
     <Compile Include="HomeMaster.Master.designer.cs">
       <DependentUpon>HomeMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Kid.aspx.cs">
+      <DependentUpon>Kid.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Kid.aspx.designer.cs">
+      <DependentUpon>Kid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Men.aspx.cs">
+      <DependentUpon>Men.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Men.aspx.designer.cs">
+      <DependentUpon>Men.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\Invoice.aspx.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\Invoice.aspx.designer.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\Status.aspx.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\Status.aspx.designer.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\User_Product.aspx.cs">
+      <DependentUpon>User_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\User_Product.aspx.designer.cs">
+      <DependentUpon>User_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\user_profile.aspx.cs">
+      <DependentUpon>user_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\user_profile.aspx.designer.cs">
+      <DependentUpon>user_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\User_Profile.Master.cs">
+      <DependentUpon>User_Profile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\User_Profile.Master.designer.cs">
+      <DependentUpon>User_Profile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\DbConnection.cs" />
+    <Compile Include="Women.aspx.cs">
+      <DependentUpon>Women.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Women.aspx.designer.cs">
+      <DependentUpon>Women.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="HomeMaster.Master" />
+    <Content Include="Admin_Profile\Admin_Profile.Master" />
     <None Include="packages.config" />
+    <Content Include="User_Profile\User_Profile.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,9 +264,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin_Profile\" />
+    <Folder Include="Admin_Profile\img\" />
     <Folder Include="img\" />
-    <Folder Include="User_Profile\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

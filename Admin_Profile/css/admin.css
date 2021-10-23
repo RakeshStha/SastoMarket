@@ -1,0 +1,133 @@
+﻿:root {
+    font-size: 16px;
+    font-family: "Open Sans";
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: grey;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 13rem;
+    padding: 1rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #cea135;
+}
+
+.navbars {
+    width: 13rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #182744;
+    /* Total vertical height */
+    transition: width 240ms ease;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items:last-child {
+    margin-top: 19rem;
+}
+/* We can select a list and put it in end using margin-top:auto */
+
+i {
+    font-size: 2.5rem;
+    min-width: 2rem;
+    margin-top: 0 1.5rem;
+    color: #e78200;
+}
+
+.nav-items {
+    margin: 15px 5px;
+    padding: 0px;
+}
+
+.text {
+    margin-left: 10px;
+    display: none;
+    color: #e78200;
+    font-weight: 650;
+}
+
+.navbars:hover {
+    width: 16rem;
+}
+
+    .navbars:hover .text {
+        display: block;
+    }
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.text:hover {
+    color: #6649b8;
+}
+
+
+
+/* .nav-items:hover {
+  background-color: #cea135;
+} */
+@media only screen and (max-width: 600px) {
+    main {
+        margin-left: 0rem;
+        padding: 1rem;
+    }
+
+    .navbars {
+        top: 0;
+        width: 100vw;
+        height: 10rem;
+    }
+
+        .navbars:hover {
+            width: 100vw;
+        }
+
+            .navbars:hover .text {
+                display: none;
+            }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* .nav-link {
+    justify-content: center;
+  } */
+    .nav-items:last-child {
+        margin-top: 4px;
+    }
+}

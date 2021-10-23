@@ -3,6 +3,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    
+    <style>
+        .allcatagories{
+            color:#f49304;
+        }
+    </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

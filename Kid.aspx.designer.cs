@@ -10,7 +10,7 @@
 
 namespace SastoMarket
 {
-    public partial class collection
+    public partial class Kid
     {
     }
 }

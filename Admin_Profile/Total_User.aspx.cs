@@ -5,19 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SastoMarket
+namespace SastoMarket.Admin_Profile
 {
-    public partial class contact : System.Web.UI.Page
+    public partial class Total_User : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-
-        protected void Unnamed1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("home.aspx");
         }
     }
 }
