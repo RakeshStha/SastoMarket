@@ -7,8 +7,8 @@ namespace SastoMarket.Bll
 {
     public class Product
     {
-        int pid { get; set; }
-        String productname { get; set; }
+        int Pid { get; set; }
+        String Product_Name { get; set; }
 
         
     }

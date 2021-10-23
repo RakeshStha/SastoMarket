@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="SastoMarket.contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="SastoMarket.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/contact.css">

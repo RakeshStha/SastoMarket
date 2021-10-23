@@ -52,6 +52,18 @@ namespace SastoMarket.Dao
             cmd.Parameters.AddWithValue("@uid", uid);
             cmd.ExecuteNonQuery();
         }
+
+        public DataTable TotalAccount()
+        {
+
+            string sql = "SELECT COUNT(*) AS products FROM product";
+            SqlDataAdapter da = new SqlDataAdapter(sql, dc.cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "TotalAccount");
+            return ds.Tables[0];
+
+        }
+
         public DataTable GetAccount()
         {
             //connection to Database

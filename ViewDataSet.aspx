@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container m-5 p-5">
-        <asp:Repeater ID="Repeater1" runat="server">
+        <asp:Repeater ID="Repeater1" class="navbar" runat="server">
                 <ItemTemplate>
                                          <h2 class="text-center" >Profile Information</h2>
                                 <hr>

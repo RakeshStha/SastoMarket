@@ -10,11 +10,12 @@ namespace SastoMarket.Bill
         public int uid { get; set; }
 
         public string username { get; set; }
-
         public string fullname { get; set; }
         public string address { get; set; }
         public string phone { get; set; }
         public string dob { get; set; }
+        public string country { get; set; }
+
         public string password { get; set; }
         public string role { get; set; }
         public string entry_date { get; set; }

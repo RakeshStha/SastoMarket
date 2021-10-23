@@ -14,16 +14,17 @@ namespace SastoMarket
 {
     public partial class signup : System.Web.UI.Page
     {
+      
         protected void Page_Load(object sender, EventArgs e)
         {
-           // if (!IsPostBack)
-            //{
+            if (!IsPostBack)
+            {
 
-            //}
+            }
         }
 
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void SignUp_Click(object sender, EventArgs e)
         {
             try
             {
@@ -33,9 +34,10 @@ namespace SastoMarket
                 //FileUpload1.SaveAs(Server.MapPath("~/Folder/" + FileUpload1.FileName));
 
 
-                Account s = new Account(usernames.Value, fullname.Value, address.Value, phone.Value, dob.Value, password.Value);
-                AccountDao sd = new AccountDao();
-                sd.CreateAccount(s);
+      
+               //Account s = new Account(username.Text, fullname.Text, address.Text, phone.Text,dob.Text,password.Text);
+                //AccountDao sd = new AccountDao();
+                //sd.CreateAccount(s);
                 Response.Redirect("home.aspx");
 
             }
@@ -44,5 +46,7 @@ namespace SastoMarket
                 Response.Write(ex.Message);
             }
         }
+
+
     }
 }

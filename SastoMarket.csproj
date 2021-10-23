@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_Profile\Add.aspx" />
     <Content Include="Admin_Profile\Add_Product.aspx" />
     <Content Include="Admin_Profile\Add_User.aspx" />
     <Content Include="Admin_Profile\css\admin.css" />
@@ -99,6 +100,13 @@
     <Content Include="Women.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_Profile\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Profile\Add_Product.aspx.cs">
       <DependentUpon>Add_Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

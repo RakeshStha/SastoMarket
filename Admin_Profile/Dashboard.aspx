@@ -4,12 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="container-fluid">
            
-            <h2 class="text-center " style="color:#e78200; font-weight: 600;">Welcome Mr. Admin !</h2>
+            <h2 class="text-center " style="color:#e78200; font-weight: 600;">Welcome Admin - <asp:Label ID="admin" runat="server" Text=""></asp:Label> !</h2>
             <hr>
           
             <!--View-->
         
                   <div class="container">
+
                       <div class="card m-3">
                         <div class="card-body">
                           <h5 class="card-title text-center">Available User's : <asp:Label ID="ttlusr" runat="server" Text=""></asp:Label></div>

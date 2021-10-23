@@ -1,5 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="SastoMarket.signup" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="signup.aspx.cs" Inherits="SastoMarket.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/footer.css" />
     <style>
         .signup-container{
             margin: 20px;
@@ -27,24 +29,26 @@
     <div class="signup-form">
         <div class="form-row">
             <div class="col form-group" >
-                <label>Full Name </label>   
-                  <input type="text" class="form-control" name="fullname" ID="fullname" placeholder="Your name" runat="server"/>
+                <label>Full Name </label> 
+                <asp:TextBox ID="fullname" runat="server"  class="form-control" placeholder="Your name"></asp:TextBox>
 
             </div> 
             <div class="col form-group">
                 <label>Address</label>
-                  <input type="text" class="form-control" name="address" placeholder="Your Address" id="address" runat="server"/>
+                <asp:TextBox ID="address" class="form-control" runat="server" placeholder="Your Address"></asp:TextBox>
             </div> 
         </div> 
 
         <div class="form-row">
             <div class="col form-group" >
-                <label>Phone </label>   
-                  <input type="number" class="form-control" name="phone" ID="phone" placeholder="Your name" runat="server"/>
+                <label>Phone </label> 
+                <asp:TextBox ID="phone" class="form-control" runat="server" placeholder="Your number"></asp:TextBox>
             </div> 
             <div class="col form-group">
                 <label>Date of Birth</label>
-                  <input type="date" class="form-control" name="dob" ID="dob" placeholder="Your Address" runat="server"/>
+                
+                <input type="date" ID="dob"  class="form-control" runat="server" />
+                
             </div> 
         </div> 
 
@@ -103,18 +107,19 @@
          <div class="form-row">
         <div class="form-group col-md-6" >
             <label>Username</label>
-            <input class="form-control" name="usernames" ID="usernames" runat="server" placeholder="Username" />
+            <asp:TextBox ID="username"  class="form-control" runat="server" placeholder="Username"></asp:TextBox>
+       
        
         </div> 
         <div class="form-group col-md-6">
             <label>Password</label>
-
-             <input type="password" class="form-control" ID="password" placeholder="******"  runat="server" />
+            <asp:TextBox type="password" class="form-control" ID="password" placeholder="******" runat="server"></asp:TextBox>
+     
         </div>
         </div>
         <div class="form-group">
             <div class="text-center">
-                <asp:Button ID="Button2" class="btn btn-primary"  runat="server" Text="SignUp" OnClick="Button2_Click()" />
+                <asp:Button ID="Button2" runat="server" OnClick="SignUp_Click" Text="SignUp" />
             </div>
             
 

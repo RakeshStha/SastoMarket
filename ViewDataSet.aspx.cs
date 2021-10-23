@@ -18,10 +18,10 @@ namespace SastoMarket
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AccountDao sd = new AccountDao();
-            DataTable dt = sd.GetAccount();
-            Repeater1.DataSource = dt;
-            Repeater1.DataBind();
+           // AccountDao sd = new AccountDao();
+            //DataTable dt = sd.GetAccount();
+           // Repeater1.DataSource = dt;
+            //Repeater1.DataBind();
         }
     }
 }
