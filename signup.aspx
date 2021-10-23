@@ -114,8 +114,9 @@
         </div>
         <div class="form-group">
             <div class="text-center">
-                <asp:Button  class="btn btn-primary" ID="Button1" runat="server" Text="Sign Up" OnClick="Button1_Click" />
+                <asp:Button ID="Button2" class="btn btn-primary"  runat="server" Text="SignUp" OnClick="Button2_Click()" />
             </div>
+            
 
         </div>
         <!-- form-row end.

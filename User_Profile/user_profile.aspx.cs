@@ -26,27 +26,13 @@ namespace SastoMarket.User_Profile
                 if (Session["username"] == null) return;
 
 
-                GetData();
-                Repeater1.DataBind();
+             
             }
 
         }
         private void GetData()
         {
-            DbConnection cn = new DbConnection();
-
-            using (SqlConnection con = new SqlConnection(cn))
-            {
-                string user = Session["username"].ToString();
-
-                SqlDataAdapter da = new SqlDataAdapter("Select * from signup where email = '" + user + "'", con);
-
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                Repeater1.DataSource = ds;
-
-                //return ds;
-            }
+           
         }
     }
 }

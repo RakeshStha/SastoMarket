@@ -9,5 +9,7 @@ namespace SastoMarket.Bll
     {
         int pid { get; set; }
         String productname { get; set; }
+
+        
     }
 }

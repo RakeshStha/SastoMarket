@@ -9,6 +9,7 @@
         .allcatagories{
             color:#f49304;
         }
+       
     </style>
 </asp:Content>
 
@@ -40,32 +41,32 @@
                         <h2 class="Home-heading text-center">Browser Catagories</h2>
 
                     <div class="row align-self-center">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <h4 class="browser_catagories-heading">Fashion</h4>
+                        <div class="col-xs-12 col-sm-6 col-md-3 home-height">
+                            <h4 class="browser_catagories-heading">Kid</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
-                              <img class="img-fluid mx-auto d-block" src="img/Browser_Electronic.png">
+                              <img class="img-fluid mx-auto d-block" src="img/kid.png">
                             </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 g-2">
-                            <h4 class="browser_catagories-heading">Gadgets</h4>
+                        <div class="col-xs-12 col-sm-6 col-md-3 home-height">
+                            <h4 class="browser_catagories-heading">Men</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
-                              <img class="img-fluid" src="img/Browser_Fashion.jpg">
+                              <img class="img-fluid" src="img/men.jpg">
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3 home-height">
+                            <h4 class="browser_catagories-heading">Women</h4>
+                            <div class="flex-box">
+                            <div class="home_catagories">
+                              <img class="img-fluid" src="img/women.jpg">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 home-height">
                             <h4 class="browser_catagories-heading">Kitchens</h4>
-                            <div class="flex-box">
-                            <div class="home_catagories">
-                              <img class="img-fluid" src="img/Browser_Gadgets.jpg">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <h4 class="browser_catagories-heading">Electronics</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
                               <img class="img-fluid" src="img/Browser_Kitchen.png">
