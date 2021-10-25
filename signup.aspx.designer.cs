@@ -20,6 +20,14 @@ namespace SastoMarket
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
+        
+
+        protected global::System.Web.UI.WebControls.TextBox Fullname;
+        protected global::System.Web.UI.WebControls.TextBox Username;
+        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.WebControls.TextBox Dob;
+        protected global::System.Web.UI.WebControls.TextBox Address;
+        protected global::System.Web.UI.WebControls.TextBox Phone;
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
     }

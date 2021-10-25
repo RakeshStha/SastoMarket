@@ -69,7 +69,7 @@
                             <h4 class="browser_catagories-heading">Kitchens</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
-                              <img class="img-fluid" src="img/Browser_Kitchen.png">
+                              <img class="img-fluid" src="img/kitchen.jpg">
                             </div>
                           </div>
                         </div>

@@ -30,24 +30,24 @@
         <div class="form-row">
             <div class="col form-group" >
                 <label>Full Name </label> 
-                <asp:TextBox ID="fullname" runat="server"  class="form-control" placeholder="Your name"></asp:TextBox>
+                <asp:TextBox ID="Fullname" runat="server"  class="form-control"  placeholder="Your name"></asp:TextBox>
 
             </div> 
             <div class="col form-group">
                 <label>Address</label>
-                <asp:TextBox ID="address" class="form-control" runat="server" placeholder="Your Address"></asp:TextBox>
+                <asp:TextBox ID="Address" class="form-control" runat="server" placeholder="Your Address"></asp:TextBox>
             </div> 
         </div> 
 
         <div class="form-row">
             <div class="col form-group" >
                 <label>Phone </label> 
-                <asp:TextBox ID="phone" class="form-control" runat="server" placeholder="Your number"></asp:TextBox>
+                <asp:TextBox ID="Phone" class="form-control" runat="server" placeholder="Your number"></asp:TextBox>
             </div> 
             <div class="col form-group">
                 <label>Date of Birth</label>
-                
-                <input type="date" ID="dob"  class="form-control" runat="server" />
+                 <asp:TextBox ID="Dob" class="form-control" runat="server" placeholder="Your Date of birth"></asp:TextBox>
+             
                 
             </div> 
         </div> 
@@ -107,13 +107,13 @@
          <div class="form-row">
         <div class="form-group col-md-6" >
             <label>Username</label>
-            <asp:TextBox ID="username"  class="form-control" runat="server" placeholder="Username"></asp:TextBox>
+            <asp:TextBox ID="Username"  class="form-control" runat="server" placeholder="Username"></asp:TextBox>
        
        
         </div> 
         <div class="form-group col-md-6">
             <label>Password</label>
-            <asp:TextBox type="password" class="form-control" ID="password" placeholder="******" runat="server"></asp:TextBox>
+            <asp:TextBox type="password" class="form-control" ID="Password" placeholder="******" runat="server"></asp:TextBox>
      
         </div>
         </div>

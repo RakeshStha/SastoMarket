@@ -35,10 +35,10 @@ namespace SastoMarket
 
 
       
-               //Account s = new Account(username.Text, fullname.Text, address.Text, phone.Text,dob.Text,password.Text);
-                //AccountDao sd = new AccountDao();
-                //sd.CreateAccount(s);
-                Response.Redirect("home.aspx");
+               Account s = new Account(Username.Text, Fullname.Text, Address.Text, Phone.Text,Dob.Text,Password.Text);
+                AccountDao sd = new AccountDao();
+                sd.CreateAccount(s);
+               Response.Redirect("home.aspx");
 
             }
             catch (Exception ex)

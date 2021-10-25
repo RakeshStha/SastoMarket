@@ -9,28 +9,29 @@ namespace SastoMarket.Bill
     {
         public int uid { get; set; }
 
-        public string username { get; set; }
-        public string fullname { get; set; }
-        public string address { get; set; }
-        public string phone { get; set; }
-        public string dob { get; set; }
-        public string country { get; set; }
+        public string Username { get; set; }
+        public string Fullname { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+        public string Dob { get; set; }
+        public string Country { get; set; }
 
-        public string password { get; set; }
-        public string role { get; set; }
-        public string entry_date { get; set; }
+        public string Password { get; set; }
+        public string Role { get; set; }
+        public string Entry_date { get; set; }
 
         //For Save
 
         public Account(string username, string fullname, string address, string phone, string dob, string password)
         {
-            username = username;
-            fullname = fullname;
-            address = address;
-            phone = phone;
-            dob = dob;
-            password = password;
-          
+
+            Username = username;
+            Fullname = fullname;
+            Address = address;
+            Phone = phone;
+            Dob = dob;
+            Password = password;
+
         }
 
 

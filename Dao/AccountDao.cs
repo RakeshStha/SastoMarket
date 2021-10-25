@@ -18,15 +18,17 @@ namespace SastoMarket.Dao
         public void CreateAccount(Account s)
         {
 
-            string sql = "INSERT INTO user_account(username,fullname,address,phone,dob,password,role) VALUES (@username, @fullname, @address, @phone, @dob, @password, @role)";
+            string sql = "INSERT INTO user_account(username,fullname,address,phone,dob,password,role, email, country) VALUES (@username, @fullname, @address, @phone, @dob, @password, @role, @email, @country)";
             SqlCommand cmd = new SqlCommand(sql, dc.cn);
-            cmd.Parameters.AddWithValue("@username", s.username);
-            cmd.Parameters.AddWithValue("@fullname", s.fullname);
-            cmd.Parameters.AddWithValue("@address", s.address);
-            cmd.Parameters.AddWithValue("@phone", s.phone);
-            cmd.Parameters.AddWithValue("@dob", s.dob);
-            cmd.Parameters.AddWithValue("@password", s.password);
+            cmd.Parameters.AddWithValue("@username", s.Username);
+            cmd.Parameters.AddWithValue("@fullname", s.Fullname);
+            cmd.Parameters.AddWithValue("@address", s.Address);
+            cmd.Parameters.AddWithValue("@phone", s.Phone);
+            cmd.Parameters.AddWithValue("@dob", s.Dob);
+            cmd.Parameters.AddWithValue("@password", s.Password);
             cmd.Parameters.AddWithValue("@role", "user");
+            cmd.Parameters.AddWithValue("@email", s.Username + "user");
+            cmd.Parameters.AddWithValue("@country", "Nepal");
             cmd.ExecuteNonQuery();
         }
 
@@ -35,13 +37,13 @@ namespace SastoMarket.Dao
             string sql = "UPDATE user_account SET username=@username, fullname=@fullname, address=@address, phone=@phone, dob=@dob, password=@password, role=@role WHERE uid=uid";
             SqlCommand cmd = new SqlCommand(sql, dc.cn);
             cmd.Parameters.AddWithValue("@uid", a.uid);
-            cmd.Parameters.AddWithValue("@username", a.username);
-            cmd.Parameters.AddWithValue("@fullname", a.fullname);
-            cmd.Parameters.AddWithValue("@address", a.address);
-            cmd.Parameters.AddWithValue("@phone", a.phone);
-            cmd.Parameters.AddWithValue("@dob", a.dob);
-            cmd.Parameters.AddWithValue("@password", a.password);
-            cmd.Parameters.AddWithValue("@role", a.role);
+            cmd.Parameters.AddWithValue("@username", a.Username);
+            cmd.Parameters.AddWithValue("@fullname", a.Fullname);
+            cmd.Parameters.AddWithValue("@address", a.Address);
+            cmd.Parameters.AddWithValue("@phone", a.Phone);
+            cmd.Parameters.AddWithValue("@dob", a.Dob);
+            cmd.Parameters.AddWithValue("@password", a.Password);
+            cmd.Parameters.AddWithValue("@role", a.Role);
             cmd.ExecuteNonQuery();
         }
 
