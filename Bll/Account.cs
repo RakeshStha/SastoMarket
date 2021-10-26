@@ -12,6 +12,7 @@ namespace SastoMarket.Bill
         public string Username { get; set; }
         public string Fullname { get; set; }
         public string Address { get; set; }
+        public string Email { get; set; }
         public string Phone { get; set; }
         public string Dob { get; set; }
         public string Country { get; set; }
@@ -22,7 +23,7 @@ namespace SastoMarket.Bill
 
         //For Save
 
-        public Account(string username, string fullname, string address, string phone, string dob, string password)
+        public Account(string username, string fullname, string address, string phone, string dob, string password, string country, string email)
         {
 
             Username = username;
@@ -31,6 +32,8 @@ namespace SastoMarket.Bill
             Phone = phone;
             Dob = dob;
             Password = password;
+            Country = country;
+            Email = email;
 
         }
 

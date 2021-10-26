@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="signup.aspx.cs" Inherits="SastoMarket.signup" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" Codebehind="signup.aspx.cs" Inherits="SastoMarket.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>SignUp</title>
     <link rel="stylesheet" href="css/footer.css" />
@@ -46,22 +46,53 @@
             </div> 
             <div class="col form-group">
                 <label>Date of Birth</label>
-                 <asp:TextBox ID="Dob" class="form-control" runat="server" placeholder="Your Date of birth"></asp:TextBox>
-             
+                
+                <asp:TextBox type="date" class="form-control" ID="Dob"  runat="server"></asp:TextBox>
+
+     
                 
             </div> 
         </div> 
 
-        <!-- 
+        
         <div class="row">
         <div class="form-group col-md-6">
             <label>Email</label>
             <input type="email" name="email" class="form-control" placeholder="abc@gmail.com">
+
             <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div> 
 
         <div class="form-group col-md-6">
-            <label>Gender</label><br>
+            <div class="form-group col-md-6">
+              <label>Country</label>
+            
+
+              <select ID="Country" name="country" class="form-control">
+                <option > Choose...</option>
+                  <option  value="Uzbekistan">Uzbekistan</option>
+                  <option  value="Russia">Russia</option>
+                  <option value="United States">United States</option>
+                  <option  value="India">India</option>
+                  <option  value="Afganistan">Afganistan</option>
+                  <option  value="Nepal" selected>Nepal</option>
+                  <option  value="Australia" >Australia</option>
+                  <option  value="China">China</option>
+              </select>
+            </div> 
+           
+        </div> 
+        </div>
+        
+        <!-- form-group end.//
+    
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label>City</label>
+              <input type="text" class="form-control" name="address" placeholder="Address">
+            </div> 
+             <div class="form-group col-md-6">
+          <label>Gender</label><br>
                 <label class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="gender" value="Male">
               <span class="form-check-label"> Male </span>
@@ -74,46 +105,36 @@
                 <input class="form-check-input" type="radio" name="gender" value="Custom">
                 <span class="form-check-label"> Custom</span>
               </label>
-        </div> 
-        </div>
-        
-        <!-- form-group end.//
+            </div>
     
-        <div class="form-row">
-            <div class="form-group col-md-6">
-              <label>City</label>
-              <input type="text" class="form-control" name="address" placeholder="Address">
-            </div> 
-         
-    
-            <div class="form-group col-md-6">
-              <label>Country</label>
-              <select id="inputState" name="country" class="form-control">
-                <option name="country"> Choose...</option>
-                  <option name="country" value="Uzbekistan">Uzbekistan</option>
-                  <option name="country" value="Russia">Russia</option>
-                  <option name="country" value="United States">United States</option>
-                  <option name="country" value="India">India</option>
-                  <option name="country" value="Afganistan">Afganistan</option>
-                  <option name="country" value="Nepal" selected="Nepal">Nepal</option>
-                  <option name="country" value="Australia" >Australia</option>
-                  <option name="country" value="China">China</option>
-              </select>
-            </div> 
+            
          
         </div>
              / -->
          <!-- form-row.// -->
-         <div class="form-row">
+        <div class="form-row">
         <div class="form-group col-md-6" >
-            <label>Username</label>
-            <asp:TextBox ID="Username"  class="form-control" runat="server" placeholder="Username"></asp:TextBox>
+            <label>City</label>
+            <asp:TextBox ID="City"  class="form-control" runat="server" placeholder="Your City"></asp:TextBox>
        
        
         </div> 
         <div class="form-group col-md-6">
-            <label>Password</label>
+            <label>Username</label>
+            <asp:TextBox ID="Username"  class="form-control" runat="server" placeholder="Username"></asp:TextBox>
+     
+        </div>
+        </div>
+         <div class="form-row">
+        <div class="form-group col-md-6" >
+           
+        <label>Password</label>
             <asp:TextBox type="password" class="form-control" ID="Password" placeholder="******" runat="server"></asp:TextBox>
+       
+        </div> 
+        <div class="form-group col-md-6">
+            <label>Confirm Password</label>
+            <asp:TextBox type="password" class="form-control" ID="Password2" placeholder="******" runat="server"></asp:TextBox>
      
         </div>
         </div>

@@ -27,8 +27,8 @@ namespace SastoMarket.Dao
             cmd.Parameters.AddWithValue("@dob", s.Dob);
             cmd.Parameters.AddWithValue("@password", s.Password);
             cmd.Parameters.AddWithValue("@role", "user");
-            cmd.Parameters.AddWithValue("@email", s.Username + "user");
-            cmd.Parameters.AddWithValue("@country", "Nepal");
+            cmd.Parameters.AddWithValue("@email", s.Email);
+            cmd.Parameters.AddWithValue("@country", s.Country);
             cmd.ExecuteNonQuery();
         }
 

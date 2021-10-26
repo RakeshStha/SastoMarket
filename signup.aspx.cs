@@ -33,9 +33,12 @@ namespace SastoMarket
                 //in string FileUpload1.FileName
                 //FileUpload1.SaveAs(Server.MapPath("~/Folder/" + FileUpload1.FileName));
 
+                //Dob.SelectedDate.ToString()
 
-      
-               Account s = new Account(Username.Text, Fullname.Text, Address.Text, Phone.Text,Dob.Text,Password.Text);
+
+
+
+               Account s = new Account(Username.Text, Fullname.Text, Address.Text, Phone.Text, Dob.Text, Password.Text, Country.Value, Email.Value);
                 AccountDao sd = new AccountDao();
                 sd.CreateAccount(s);
                Response.Redirect("home.aspx");
