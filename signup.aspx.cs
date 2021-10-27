@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 using SastoMarket.Bill;
+
 using SastoMarket.Dao;
 
 
@@ -38,7 +39,7 @@ namespace SastoMarket
 
 
 
-               Account s = new Account(Username.Text, Fullname.Text, Address.Text, Phone.Text, Dob.Text, Password.Text, Country.Value, Email.Value);
+               Account s = new Account(Username.Text, Fullname.Text, Address.Text, Phone.Text, Dob.Text, Password.Text, Country.SelectedItem.Value, Email.Text);
                 AccountDao sd = new AccountDao();
                 sd.CreateAccount(s);
                Response.Redirect("home.aspx");

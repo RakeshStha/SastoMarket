@@ -18,6 +18,10 @@
     margin-bottom: 2rem;
 }
 
+.form-controls {
+    height: 8rem;
+}
+
 .btn-clr {
     background-color: #6832F8;
     color: white;

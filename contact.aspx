@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/contact.css">
-   
+   <link rel="stylesheet" href="css/footer.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--COntact Us-->
@@ -13,18 +13,16 @@
         <p class="text-start info">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur. rat vel eaque perferendis ipsam </p>
         <div class="contact-forms">
             <div class="form-group">
-            <input type="email" class="form-control" id="email" placeholder="Enter email" runat="server">
+            <input type="email" class="form-control" id="Email" placeholder="Enter Your Email" runat="server">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="fame"   placeholder="Enter your Full Name" runat="server">
+                <input type="text" class="form-control" id="Fullname"   placeholder="Enter Your Full Name" runat="server">
             </div>
             <div class="form-group">
-                <textarea class="form-control" id="message" rows="7" placeholder="Your Message" runat="server"></textarea>
+                <textarea class="form-control" id="Messages" placeholder="Your Message" runat="server" style="height: 10rem;"></textarea>
             </div>
             <div class="text-center">
-                <asp:Button ID="Button1"  class="btn btn-clr px-5 py-3" runat="server" Text="Button" OnClick="Unnamed1_Click" />
-
-              
+                <asp:Button ID="Contact"  class="btn btn-clr px-5 py-3" runat="server" Text="Send" OnClick="Unnamed1_Click" />
             </div>
         </div>
       </div>

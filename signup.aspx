@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" Codebehind="signup.aspx.cs" Inherits="SastoMarket.signup" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="signup.aspx.cs" Inherits="SastoMarket.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>SignUp</title>
     <link rel="stylesheet" href="css/footer.css" />
@@ -58,7 +58,9 @@
         <div class="row">
         <div class="form-group col-md-6">
             <label>Email</label>
-            <input type="email" name="email" class="form-control" placeholder="abc@gmail.com">
+            <asp:TextBox ID="Email" class="form-control" placeholder="abc@gmail.com" runat="server"></asp:TextBox>
+
+           
 
             <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div> 
@@ -66,19 +68,11 @@
         <div class="form-group col-md-6">
             <div class="form-group col-md-6">
               <label>Country</label>
-            
-
-              <select ID="Country" name="country" class="form-control">
-                <option > Choose...</option>
-                  <option  value="Uzbekistan">Uzbekistan</option>
-                  <option  value="Russia">Russia</option>
-                  <option value="United States">United States</option>
-                  <option  value="India">India</option>
-                  <option  value="Afganistan">Afganistan</option>
-                  <option  value="Nepal" selected>Nepal</option>
-                  <option  value="Australia" >Australia</option>
-                  <option  value="China">China</option>
-              </select>
+                 <asp:DropDownList ID="Country" class="form-control" runat="server">
+                     <asp:ListItem Value="Nepal">Nepal</asp:ListItem>
+                     <asp:ListItem Value="India">India</asp:ListItem>
+                     <asp:ListItem Value="Pakistan">Pakistan</asp:ListItem>
+                    </asp:DropDownList>
             </div> 
            
         </div> 
@@ -140,18 +134,10 @@
         </div>
         <div class="form-group">
             <div class="text-center">
-                <asp:Button ID="Button2" runat="server" OnClick="SignUp_Click" Text="SignUp" />
+                <asp:Button ID="Button2" class="btn btn-primary" runat="server" OnClick="SignUp_Click" Text="SignUp" />
             </div>
-            
-
         </div>
-        <!-- form-row end.
-        <div class="form-group">
-          
-                Text="Sign Up" OnClick="SignUp_Btn"
 
-            
-        </div> 
         <!-- form-group// --> 
         <div class="border-top card-body text-center">Have an account? <a href="login.aspx">Log In</a></div> 
         <!-- form-group// --> 

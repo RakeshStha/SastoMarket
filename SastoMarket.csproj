@@ -157,6 +157,7 @@
       <DependentUpon>Beauty.aspx</DependentUpon>
     </Compile>
     <Compile Include="Bll\Account.cs" />
+    <Compile Include="Bll\Contact_Messages.cs" />
     <Compile Include="Bll\Order.cs" />
     <Compile Include="Bll\Product.cs" />
     <Compile Include="Bll\User.cs" />
@@ -168,6 +169,7 @@
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dao\AccountDao.cs" />
+    <Compile Include="Dao\ContactDao.cs" />
     <Compile Include="Dao\OrderDao.cs" />
     <Compile Include="Dao\UserDao.cs" />
     <Compile Include="home.aspx.cs">
