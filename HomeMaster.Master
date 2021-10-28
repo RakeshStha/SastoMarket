@@ -98,9 +98,10 @@
                         <li class="nav-item">
                           <a class="nav-link" href="Beauty.aspx"><span class="active_beauty">BEAUTY</span></a>
                         </li>
-                        <!--<li class="nav-item">
-                          <a class="nav-link" href="kitchen.aspx">Kitchens</a>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.aspx">CONTACT US</a>
                         </li>
+                          <!--
                         <li class="nav-item">
                           <a class="nav-link" href="contact.aspx">Contact</a>
                         </li>-->

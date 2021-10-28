@@ -171,6 +171,7 @@
     <Compile Include="Dao\AccountDao.cs" />
     <Compile Include="Dao\ContactDao.cs" />
     <Compile Include="Dao\OrderDao.cs" />
+    <Compile Include="Dao\ProductDao.cs" />
     <Compile Include="Dao\UserDao.cs" />
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>

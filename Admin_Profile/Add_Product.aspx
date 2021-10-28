@@ -14,24 +14,24 @@
                                 </div>
                                         <div class="form-group">
                                             <label class="b">Name of product:
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="name" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Productname" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
                                             </label>
-                                             <input type="text" runat="server" class="form-control" placeholder="Name of product" id="name"  >
+                                             <input type="text" runat="server" class="form-control" placeholder="Name of product" id="Productname"  >
 
                                         </div>
                                         <div class="form-group">
                                             <label  class="b">Price :
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="price" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Price" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
                                             </label>
-                                            <input type="number" runat="server" class="form-control" id="price" rows="1" name="price" />
+                                            <input type="number" runat="server" class="form-control" id="Price" rows="1" name="Price" />
                                         </div>
 
 
                                          <div class="form-group">
                                             <label class="b">Category:
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="type" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Catagory" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
                                             </label>
-                                             <select id="type" runat="server" class="form-control"  >
+                                             <select id="Catagory" runat="server" class="form-control"  >
                                             <option selected>Choose...</option>
                                             <option value="Men">Men</option>
                                             <option  value="Kid">Kid</option>
@@ -44,9 +44,9 @@
 
                                         <div class="form-group">
                                             <label  class="b">Description :
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="description" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Description" ErrorMessage="*" ForeColor="Red" Width="16px" Font-Bold="True" Font-Size="Medium"></asp:RequiredFieldValidator>
                                             </label>
-                                            <textarea runat="server" class="form-control" id="description" rows="4" name="description"></textarea>
+                                            <textarea runat="server" class="form-control" id="Description" rows="4" name="description"></textarea>
                                         </div>
                                         
                                         <div class="form-group">
@@ -72,7 +72,7 @@
                            
                             
                             <div class="text-center">
-                            <asp:Button runat="server" Text="submit"  class="btn btn-primary mb-2" />
+                            <asp:Button runat="server" Text="submit"  class="btn btn-primary mb-2" OnClick="Unnamed1_Click" />
                             
                             </div>
                             

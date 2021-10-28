@@ -30,11 +30,13 @@
                                 </div>
                               <label for="Username" class="form-label-login">Username</label>
                               <asp:TextBox class="form-control" ID="Username" placeholder="Username" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" controlToValidate="Username" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
                               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                             </div>
                             <div class="mb-3">
                               <label for="Password" class="form-label-login">Password</label>
                               <asp:TextBox type="password" class="form-control" ID="Password" placeholder="******"  runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" controlToValidate="Password" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                             <!--
                             <div class="mb-3 form-check">

@@ -19,61 +19,25 @@
 
         <div class="collection-container"> 
             <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-block text-center">
+                  <asp:Repeater ID="Repeater1" runat="server">
+                       <ItemTemplate>
+                              <div class="col-sm-4">
+                                  <div class="mb-3">
+                                    <div class="card">
+                                        <div class="card-block text-center">
                           
-                          <img class="img-fluid" src="img/gadgets/electronic_computer.png">
-                          <h4 class="card-title mt-2">Computer</h4>
-                          <p class="card-text"><strong class="animated-text">Rs 50,000</strong></p>       
-                          <button type="submit" class="btn btn-success m-3">Buy Now</button>
-                        </div>        
-                      </div>
-                </div>
-              <div class="col">
-                <div class="card">
-                    <div class="card-block text-center">
-                    <img class="img-fluid" src="img/gadgets/electronic_samsung_mobile.png">
-                    <h4 class="card-title mt-2">Samsung galaxy</h4>
-                    <p class="card-text"><strong class="animated-text">Rs 25,000</strong></p>     
-                    <button type="submit" class="btn btn-success m-3">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-block text-center">
-                    
-                    <img class="img-fluid" src="img/gadgets/electronic_samsung_mobile.png">
-                    <h4 class="card-title mt-2">Samsung galaxy</h4>
-                    <p class="card-text"><strong class="animated-text">Rs 25,000</strong></p>   
-                    <button type="submit" class="btn btn-success m-3">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-block text-center">
-                    
-                    <img class="img-fluid" src="img/gadgets/electronic_samsung_mobile.png">
-                    <h4 class="card-title mt-2">Samsung galaxy</h4>
-                    <p class="card-text"><strong class="animated-text">Rs 25,000</strong></p>
-                    <button type="submit" class="btn btn-success m-3">Buy Now</button>  
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col">
-              <div class="card">
-                <div class="card-block text-center">
-                  
-                  <img class="img-fluid" src="img/gadgets/electronic_computer.png">
-                  <h4 class="card-title mt-2">Computer</h4>
-                  <p class="card-text"><strong class="animated-text">Rs 50,000</strong></p>       
-                  <button type="submit" class="btn btn-success m-3">Buy Now</button>
-                </div>        
-              </div>
-            </div>
+                                          <img class="img-fluid" src="img/<%#Eval("Product_Image") %>">
+                                           
+                                          <h4 class="card-title mt-2"><%# Eval("Product_Name")%></h4>
+                                          <p class="card-text"><strong class="animated-text">Rs <%# Eval("Price")%></strong></p>   
+                                            <p><%# Eval("Product_Description")%></p>
+                                          <button type="submit" class="btn btn-success m-3">Buy Now</button>
+                                        </div>        
+                                      </div>
+                                  </div>
+                                </div>                       
+                       </ItemTemplate>
+                  </asp:Repeater>
 
             </div>
           </div>

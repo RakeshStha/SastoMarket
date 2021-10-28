@@ -7,9 +7,25 @@ namespace SastoMarket.Bll
 {
     public class Product
     {
-        int Pid { get; set; }
-        String Product_Name { get; set; }
+        public int Pid { get; set; }
+        public string Productname { get; set; }
+        public string FileUpload1 { get; set; }
+        public string Description { get; set; }
 
-        
+        public string Catagorys { get; set; }
+        public string Prices { get; set; }
+        public string ENtry_Date { get; set; }
+        public Product(string Product_Name, string Product_Image, string Product_Description, string Catagory, string Price)
+        {
+
+            Productname= Product_Name;
+            FileUpload1= Product_Image;
+            Description= Product_Description;
+            Catagorys= Catagory;
+            Prices= Price;
+
+
+
+        }
     }
 }
