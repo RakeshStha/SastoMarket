@@ -14,11 +14,12 @@ namespace SastoMarket
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ProductDao sd = new ProductDao();
-            DataSet dt = sd.GetProduct();
-            Repeater1.DataSource = dt;
-       
-            Repeater1.DataBind();
+            ProductDao ff = new ProductDao();
+            DataSet dss = ff.GetBeauty();
+            Product_Beauty.DataSource = dss;
+            Product_Beauty.DataBind();
+
+           
         }
     }
 }

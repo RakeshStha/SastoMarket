@@ -3,6 +3,13 @@
     align-items: center;
 }
 
+.show{
+    display:block;
+}
+.hides{
+    display:none;
+}
+
 .product-bg {
     padding: 40px;
     background: rgba(52, 164, 165, 0.04);

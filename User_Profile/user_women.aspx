@@ -1,28 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="Beauty.aspx.cs" Inherits="SastoMarket.Beauty" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User_Profile/User_Profile.Master" AutoEventWireup="true" CodeFile="user_women.aspx.cs" Inherits="SastoMarket.User_Profile.user_women" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>BEAUTY</title>
-
-     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/footer.css" />
-
+    <title>Women</title>
     <style>
-        .active_beauty{
+         .active_women{
             color:#f49304;
         }
-        .collection-container{
-    padding: 20px;
-}
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <!--Beuty body-->
-
-    
-        <div class="collection-container"> 
-             <h1 class="text-center">Beauty</h1>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+      <h1 class="text-center">Women</h1>
             <div class="row">
                
-                  <asp:Repeater ID="Product_Beauty" runat="server">
+                  <asp:Repeater ID="Product_Women" runat="server">
                        <ItemTemplate>
                               <div class="col-sm-4">
                                   <div class="mb-3">
@@ -33,22 +22,14 @@
                                           <h4 class="card-title mt-2"><%# Eval("Product_Name")%></h4>
                                           <p class="card-text"><strong class="animated-text">Rs <%# Eval("Price")%></strong></p>   
                                             <p><%# Eval("Product_Description")%></p>
-                                          <button type="submit" class="btn btn-success m-3">Buy Now</button>
+                                         <button type="submit" class="btn btn-success m-3">Buy Now</button>       
                                         </div>        
                                       </div>
                                   </div>
                                 </div>                       
                        </ItemTemplate>
                   </asp:Repeater>
+         
                     </div>
 
-            </div>
-
-
-
-
-
-
-
-<!--End of Beauty body-->
 </asp:Content>

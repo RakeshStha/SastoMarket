@@ -1,33 +1,28 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="SastoMarket.home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User_Profile/User_Profile.Master" AutoEventWireup="true" CodeFile="user_allcatagories.aspx.cs" Inherits="SastoMarket.User_Profile.user_allcatagories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/home.css" />
+    <title>All Catagories</title>
+     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/footer.css" />
-    
     <style>
-        .allcatagories{
+         .active_allcatagories{
             color:#f49304;
         }
-       
     </style>
 </asp:Content>
-
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <!--Body-->
-    <div class="home_bdy">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+     <div class="home_bdy">
                 <!--Advertisement Banner-->
                     <div class="Banner p-5">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6 ">
                                     <div class="Banner_pic">
-                                        <img src="img/Banner_1.gif" alt="Sale">
+                                        <img src="../img/Banner_1.gif" alt="Sale">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="Banner_pic">
-                                        <img src="img/Banner_2.gif" alt="50% off">
+                                        <img src="../img/Banner_2.gif" alt="50% off">
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +40,7 @@
                             <h4 class="browser_catagories-heading">Kid</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
-                              <img class="img-fluid mx-auto d-block" src="img/kid.png">
+                              <img class="img-fluid mx-auto d-block" src="../img/kid.png">
                             </div>
                             </div>
                         </div>
@@ -53,7 +48,7 @@
                             <h4 class="browser_catagories-heading">Men</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
-                              <img class="img-fluid" src="img/men.jpg">
+                              <img class="img-fluid" src="../img/men.jpg">
                             </div>
                           </div>
                         </div>
@@ -61,7 +56,7 @@
                             <h4 class="browser_catagories-heading">Women</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
-                              <img class="img-fluid" src="img/women.jpg">
+                              <img class="img-fluid" src="../img/women.jpg">
                             </div>
                           </div>
                         </div>
@@ -69,7 +64,7 @@
                             <h4 class="browser_catagories-heading">Kitchens</h4>
                             <div class="flex-box">
                             <div class="home_catagories">
-                              <img class="img-fluid" src="img/kitchen.jpg">
+                              <img class="img-fluid" src="../img/kitchen.jpg">
                             </div>
                           </div>
                         </div>
@@ -91,7 +86,7 @@
                                               <div class="mb-3">
                                                 <div class="card">
                                                     <div class="card-block text-center">
-                                                      <img class="img-fluid" src="img/<%# Eval("Product_Image") %>">
+                                                      <img class="img-fluid" src="../img/<%# Eval("Product_Image") %>">
                                                       <h4 class="card-title mt-2"><%#Eval("Product_Name") %></h4>
                                                       <p class="card-text"><strong class="animated-text">Rs <%#Eval("Price") %></strong></p>       
                                                     </div>        
@@ -109,6 +104,4 @@
                     </div>
                 </div>
         </div>
-            <!--End of Body-->
-
 </asp:Content>

@@ -1,18 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="Kid.aspx.cs" Inherits="SastoMarket.Kid" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User_Profile/User_Profile.Master" AutoEventWireup="true" CodeFile="user_kid.aspx.cs" Inherits="SastoMarket.User_Profile.user_kid" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>KID</title>
-
-     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/footer.css" />
-
+    <title>Kid</title>
     <style>
-        .active_kid{
+         .active_kid{
             color:#f49304;
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-             <div class="collection-container"> 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <div class="collection-container"> 
                 <h1 class="text-center">Kid</h1>
                     <div class="row">
                           <asp:Repeater ID="Repeater2" runat="server">

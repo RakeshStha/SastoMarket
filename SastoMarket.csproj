@@ -93,8 +93,13 @@
     <Content Include="User_Profile\History.aspx" />
     <Content Include="User_Profile\Invoice.aspx" />
     <Content Include="User_Profile\Status.aspx" />
+    <Content Include="User_Profile\user_men.aspx" />
+    <Content Include="User_Profile\user_allcatagories.aspx" />
+    <Content Include="User_Profile\user_beauty.aspx" />
+    <Content Include="User_Profile\user_kid.aspx" />
     <Content Include="User_Profile\User_Product.aspx" />
     <Content Include="User_Profile\user_profile.aspx" />
+    <Content Include="User_Profile\user_women.aspx" />
     <Content Include="ViewDataSet.aspx" />
     <Content Include="Web.config" />
     <Content Include="Women.aspx" />
@@ -244,6 +249,34 @@
     <Compile Include="User_Profile\Status.aspx.designer.cs">
       <DependentUpon>Status.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User_Profile\user_men.aspx.cs">
+      <DependentUpon>user_men.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\user_men.aspx.designer.cs">
+      <DependentUpon>user_men.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\user_allcatagories.aspx.cs">
+      <DependentUpon>user_allcatagories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\user_allcatagories.aspx.designer.cs">
+      <DependentUpon>user_allcatagories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\user_beauty.aspx.cs">
+      <DependentUpon>user_beauty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\user_beauty.aspx.designer.cs">
+      <DependentUpon>user_beauty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\user_kid.aspx.cs">
+      <DependentUpon>user_kid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\user_kid.aspx.designer.cs">
+      <DependentUpon>user_kid.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User_Profile\User_Product.aspx.cs">
       <DependentUpon>User_Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,6 +297,13 @@
     </Compile>
     <Compile Include="User_Profile\User_Profile.Master.designer.cs">
       <DependentUpon>User_Profile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\user_women.aspx.cs">
+      <DependentUpon>user_women.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\user_women.aspx.designer.cs">
+      <DependentUpon>user_women.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utils\DbConnection.cs" />
     <Compile Include="ViewDataSet.aspx.cs">
@@ -296,6 +336,7 @@
   <ItemGroup>
     <Folder Include="Admin_Profile\img\" />
     <Folder Include="img\" />
+    <Folder Include="Product_Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

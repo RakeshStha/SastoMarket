@@ -12,5 +12,6 @@ namespace SastoMarket
 {
     public partial class Product_Show
     {
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }

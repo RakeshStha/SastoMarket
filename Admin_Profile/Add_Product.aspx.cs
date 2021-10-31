@@ -28,7 +28,7 @@ namespace SastoMarket.Admin_Profile
 
                 Product s = new Product(Productname.Value,FileUpload1.FileName,Description.Value,Catagory.Value,Price.Value);
                 ProductDao sd = new ProductDao();
-                FileUpload1.SaveAs(Server.MapPath("~/img/" + FileUpload1.FileName));
+                FileUpload1.SaveAs(Server.MapPath("~/Product_Images/" + FileUpload1.FileName));
                 sd.CreateProduct(s);
                 Response.Redirect("Dashboard.aspx");
 

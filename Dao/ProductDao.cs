@@ -72,6 +72,60 @@ namespace SastoMarket.Dao
             da.Fill(ds, "Product");
             return ds;
         }
+        public DataSet GetHomeProduct()
+        {
+            //connection to Database
+
+            string sql = "SELECT * FROM Product";
+            SqlDataAdapter da = new SqlDataAdapter(sql, dc.cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "HomeProduct");
+            return ds;
+        }
+        public DataSet GetMen()
+        {
+            //connection to Database
+
+            string sql = "SELECT * FROM Product where Catagory ='Men' ";
+            SqlDataAdapter da = new SqlDataAdapter(sql, dc.cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Men");
+            return ds;
+        }
+
+        public DataSet GetBeauty()
+        {
+            //connection to Database
+
+            string sql = "SELECT * FROM Product where Catagory ='Beauty' ";
+            SqlDataAdapter da = new SqlDataAdapter(sql, dc.cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Beauty");
+            return ds;
+        }
+
+        public DataSet GetWomen()
+        {
+            //connection to Database
+
+            string sql = "SELECT * FROM Product where Catagory ='Women' ";
+            SqlDataAdapter da = new SqlDataAdapter(sql, dc.cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Women");
+            return ds;
+        }
+      
+
+        public DataSet GetKid()
+        {
+            //connection to Database
+
+            string sql = "SELECT * FROM Product where Catagory ='Kid' ";
+            SqlDataAdapter da = new SqlDataAdapter(sql, dc.cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Kid");
+            return ds;
+        }
 
         public DataTable GetProductByuid(int Pid)
         {

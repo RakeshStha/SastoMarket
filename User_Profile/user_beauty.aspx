@@ -1,24 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="Beauty.aspx.cs" Inherits="SastoMarket.Beauty" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User_Profile/User_Profile.Master" AutoEventWireup="true" CodeFile="user_beauty.aspx.cs" Inherits="SastoMarket.User_Profile.user_beauty" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>BEAUTY</title>
-
-     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/footer.css" />
-
+    <title>Beauty</title>
     <style>
-        .active_beauty{
+     .active_beauty{
             color:#f49304;
         }
-        .collection-container{
-    padding: 20px;
-}
-    </style>
+        </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <!--Beuty body-->
-
-    
-        <div class="collection-container"> 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+   <div class="collection-container"> 
              <h1 class="text-center">Beauty</h1>
             <div class="row">
                
@@ -45,10 +35,4 @@
             </div>
 
 
-
-
-
-
-
-<!--End of Beauty body-->
 </asp:Content>

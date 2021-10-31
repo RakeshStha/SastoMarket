@@ -41,6 +41,7 @@ namespace SastoMarket
                         }
                         if (role == "user")
                         {
+                          
                             Response.Redirect("User_Profile/user_profile.aspx");
                         }
                     }
@@ -48,6 +49,7 @@ namespace SastoMarket
                     {
                         ltrMessage.Text = "Invalid Username or Password";
                     }
+                 
                 }
                 catch (Exception ex)
                 {

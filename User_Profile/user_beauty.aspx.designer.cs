@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------------
 
 
-namespace SastoMarket
+namespace SastoMarket.User_Profile
 {
-    public partial class Kid
+    public partial class user_beauty
     {
-        protected global::System.Web.UI.WebControls.Repeater Repeater2;
+        protected global::System.Web.UI.WebControls.Repeater Product_Beauty;
     }
 }

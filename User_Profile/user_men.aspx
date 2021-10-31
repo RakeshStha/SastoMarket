@@ -1,19 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="Men.aspx.cs" Inherits="SastoMarket.Men" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User_Profile/User_Profile.Master" AutoEventWireup="true" CodeFile="user_men.aspx.cs" Inherits="SastoMarket.User_Profile.user_men" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>MEN</title>
-
-     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/footer.css" />
-
+    <title>Men</title>
     <style>
-        .active_men{
+         .active_men{
             color:#f49304;
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- 
-        <div class="collection-container"> 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+      <div class="collection-container"> 
         <h1 class="text-center">Men</h1>
             <div class="row">
                   <asp:Repeater ID="Repeater2" runat="server">
@@ -37,5 +32,4 @@
                   </asp:Repeater>
             </div>
           </div>
-
 </asp:Content>

@@ -12,5 +12,6 @@ namespace SastoMarket
 {
     public partial class Women
     {
+        protected global::System.Web.UI.WebControls.Repeater Product_Women;
     }
 }
