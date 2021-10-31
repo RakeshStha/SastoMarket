@@ -15,7 +15,7 @@
                        <ItemTemplate>
                               <div class="col-sm-4">
                                   <div class="mb-3">
-                                       <a style="text-decoration: none;" href='Product_Show.aspx?product_id=<%# Eval("Pid") %>' >
+                                       <a style="text-decoration: none;" href='user_product_show.aspx?product_id=<%# Eval("Pid") %>' >
                                             <div class="card">
                                                 <div class="card-block text-center">
                                                   <img class="img-fluid" src="img/<%#Eval("Product_Image") %>">   

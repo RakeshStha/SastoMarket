@@ -1,12 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeFile="Product_Show.aspx.cs" Inherits="SastoMarket.Product_Show" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User_Profile/User_Profile.Master" AutoEventWireup="true" CodeFile="user_product_show.aspx.cs" Inherits="SastoMarket.User_Profile.user_product_show" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title> Product_view</title>
     <link rel="stylesheet" href="css/Product_view.css">
-     <link rel="stylesheet" href="css/footer.css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  
-                            <asp:Repeater ID="Repeater2" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+       <asp:Repeater ID="Repeater2" runat="server">
                                     <ItemTemplate>
                                         <div class="product-container">
                                                 <div class="row product-bg">
@@ -43,23 +40,42 @@
                                                                         <h6>Price</h6>
                                                                     </div>
                                                                     <div class="col-sm-6">
-                                                                        <p><%# Eval("Price")%></p>
+                                                                        <asp:Label ID="Price" runat="server" Text='<%# Eval("Price")%>'></asp:Label>
+                                                                      
                                                                     </div>
                                                                 </div>
                           
                                                             </p>
-                                                            <div class="addtocart-content">
-                                                                <button type="submit" class="addtocart-btn qty"> -</button>
-                                                                <span>0</span>
-                                                                <button type="submit" class="addtocart-btn qty"> +</button>
-                                                            </div>
-                                                            <div class="addtocart-big-btn">
-                                                                <button type="submit" class="addtocart-btn btn-big">Add to cart</button>
-                                                            </div>
+                                                          
+                                                            
+                                                        <div class="text-center">
+                                   
+                                                               Quantity: <asp:DropDownList ID="DropDownList1" runat="server">
+                                                                        <asp:ListItem>1</asp:ListItem>
+                                                                        <asp:ListItem>2</asp:ListItem>
+                                                                        <asp:ListItem>3</asp:ListItem>
+                                                                        <asp:ListItem>4</asp:ListItem>
+                                                                        <asp:ListItem>5</asp:ListItem>
+                                                                        <asp:ListItem>6</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                               <br><br />
+                                                            <div class="text-center addtocart-content">
+                                     
+                                                                <asp:Button 
+                                                                    id="add2cart"
+                                                                   class="addtocart-btn btn-big"
+                                                                    runat="server"
+                                                                    Text="Add to Cart"
+                                                                     OnClick="Addtocart"
+                                                                     />
+                                            
+                                                                <i class="fa fa-shopping-cart icon-card"></i>
+                                                                </div>
+                                                    </div>
+
                                                     </div>
                                                 </div>
                                             </div>                      
                                      </ItemTemplate>
                           </asp:Repeater>
-
 </asp:Content>

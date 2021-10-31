@@ -98,6 +98,7 @@
     <Content Include="User_Profile\user_beauty.aspx" />
     <Content Include="User_Profile\user_kid.aspx" />
     <Content Include="User_Profile\User_Product.aspx" />
+    <Content Include="User_Profile\user_product_show.aspx" />
     <Content Include="User_Profile\user_profile.aspx" />
     <Content Include="User_Profile\user_women.aspx" />
     <Content Include="ViewDataSet.aspx" />
@@ -283,6 +284,13 @@
     </Compile>
     <Compile Include="User_Profile\User_Product.aspx.designer.cs">
       <DependentUpon>User_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\user_product_show.aspx.cs">
+      <DependentUpon>user_product_show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\user_product_show.aspx.designer.cs">
+      <DependentUpon>user_product_show.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Profile\user_profile.aspx.cs">
       <DependentUpon>user_profile.aspx</DependentUpon>
