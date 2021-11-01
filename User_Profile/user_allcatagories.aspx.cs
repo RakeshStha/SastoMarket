@@ -13,6 +13,7 @@ namespace SastoMarket.User_Profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             ProductDao mn = new ProductDao();
             DataSet mdt = mn.GetHomeProduct();
             Repeater2.DataSource = mdt;

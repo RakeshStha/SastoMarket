@@ -52,7 +52,9 @@ namespace SastoMarket.User_Profile
                     cmd.CommandText = del;
                     cmd.Connection = con;
                     cmd.ExecuteNonQuery();
+                    
                     Repeater1.DataBind();
+                    Response.Redirect("Invoice.aspx");
                 }
             }
         }

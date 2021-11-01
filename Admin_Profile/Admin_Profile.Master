@@ -47,9 +47,9 @@
                       </a>
                     </li>
                       <li class="nav-items">
-                      <a href="Add_Product.aspx" class="nav-link">
+                      <a href="Contact.aspx" class="nav-link">
                         <i class="fa fa-comments" aria-hidden="true"></i>
-                        <span class="text">Total Products</span>
+                        <span class="text">Total Messages</span>
                       </a>
                     </li>
                       

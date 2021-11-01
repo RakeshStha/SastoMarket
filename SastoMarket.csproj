@@ -70,6 +70,7 @@
     <Content Include="Admin_Profile\Add.aspx" />
     <Content Include="Admin_Profile\Add_Product.aspx" />
     <Content Include="Admin_Profile\Add_User.aspx" />
+    <Content Include="Admin_Profile\Contact.aspx" />
     <Content Include="Admin_Profile\css\admin.css" />
     <Content Include="Admin_Profile\Dashboard.aspx" />
     <Content Include="Admin_Profile\Order.aspx" />
@@ -83,6 +84,7 @@
     <Content Include="css\login.css" />
     <Content Include="css\navbar.css" />
     <Content Include="css\Product_view.css" />
+    <Content Include="error.aspx" />
     <Content Include="home.aspx" />
     <Content Include="js\navbar.js" />
     <Content Include="Kid.aspx" />
@@ -97,7 +99,6 @@
     <Content Include="User_Profile\user_allcatagories.aspx" />
     <Content Include="User_Profile\user_beauty.aspx" />
     <Content Include="User_Profile\user_kid.aspx" />
-    <Content Include="User_Profile\User_Product.aspx" />
     <Content Include="User_Profile\user_product_show.aspx" />
     <Content Include="User_Profile\user_profile.aspx" />
     <Content Include="User_Profile\user_women.aspx" />
@@ -133,6 +134,13 @@
     </Compile>
     <Compile Include="Admin_Profile\Admin_Profile.Master.designer.cs">
       <DependentUpon>Admin_Profile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Profile\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_Profile\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
@@ -181,6 +189,13 @@
     <Compile Include="Dao\OrderDao.cs" />
     <Compile Include="Dao\ProductDao.cs" />
     <Compile Include="Dao\UserDao.cs" />
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -279,13 +294,6 @@
     </Compile>
     <Compile Include="User_Profile\user_kid.aspx.designer.cs">
       <DependentUpon>user_kid.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="User_Profile\User_Product.aspx.cs">
-      <DependentUpon>User_Product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User_Profile\User_Product.aspx.designer.cs">
-      <DependentUpon>User_Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Profile\user_product_show.aspx.cs">
       <DependentUpon>user_product_show.aspx</DependentUpon>

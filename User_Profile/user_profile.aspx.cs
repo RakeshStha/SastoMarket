@@ -20,10 +20,10 @@ namespace SastoMarket.User_Profile
         {
             if (!IsPostBack)
             {
-                //  if (Session["username"] == null) Response.Redirect("../error.aspx");
+                  if (Session["username"] == null) Response.Redirect("../error.aspx");
                 String user = Session["Username"].ToString();
                 String pass = Session["Password"].ToString();
-                //if (Session["username"] == null) return;
+                if (Session["username"] == null) return;
                 GetData();
                 Repeater1.DataBind();
 
