@@ -29,7 +29,7 @@
                               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                   <div class="card">
                                       <div class="card-body">
-                                        <h5 class="card-title text-center">Available Bed</h5>
+                                        <h5 class="card-title text-center">Available Orders</h5>
                                       </div>
                                     </div> 
                               </div>
@@ -37,7 +37,7 @@
                                     <div class="card">
                                     
                                       <div class="card-body">
-                                      <h5 class="card-title text-center">Available Sofa</h5>
+                                      <h5 class="card-title text-center">Available Messages</h5>
                                         
                                       </div>
                                     </div> 

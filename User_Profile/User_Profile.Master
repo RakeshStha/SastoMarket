@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.2/css/boxicons.min.css">
     <style>
         .navbar{
-            font-family:"Mulish";
+                font-family:"Mulish";
                 color:black;
                 font-weight: 700;
-    font-size: 1.2rem;
+                font-size: 1.2rem;
         }
      
         .catagory_Navbar nav {
@@ -35,8 +35,7 @@
             top: 0;
             width: 100%;
 
-              text-align: center;
-            padding-bottom: 15px;
+            text-align: center;
             font-size: 23px;
             font-family: 'Mulish';
             font-weight: 700;
@@ -205,9 +204,9 @@
                       <li class="nav-item">
                         <a class="nav-link" href="user_profile.aspx"><span class="active_profile" style="font-weight:600; font-size:18px;">Profile</span></a>
                       </li>
-                      <li class="nav-item">
+                      <!--<li class="nav-item">
                         <a class="nav-link" href="User_Product.aspx"><span class="active_product" style="font-weight:600; font-size:18px;">Product</span></a>
-                      </li>
+                      </li>-->
                         <li class="nav-item">
                         <a class="nav-link" href="Invoice.aspx"><span class="active_invoice" style="font-weight:600; font-size:18px;">Invoice</span></a>
                       </li>
@@ -278,6 +277,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
             </asp:ContentPlaceHolder>
             <!--End of body-->
+
 
               <!--Footer-->
             <div class="home">

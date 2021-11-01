@@ -12,7 +12,7 @@
                                                 <div class="row product-bg">
                                                     <div class="col-sm-6 product-content">
                                                         <div class="product-images">
-                                                            <img src="img/<%# Eval("Product_Image")%>" alt="computer">
+                                                            <img src="Product_Images/<%# Eval("Product_Image")%>" alt="computer">
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 product-content">

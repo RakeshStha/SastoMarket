@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User_Profile/User_Profile.Master" AutoEventWireup="true" CodeFile="user_product_show.aspx.cs" Inherits="SastoMarket.User_Profile.user_product_show" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="css/Product_view.css">
+    <style>
+        .addtocart_btn{
+            
+            margin-bottom: 10px;
+             background-color:#f49304;
+            border: none;
+            color: black;
+            font:'Mulish';
+            font-weight:700;
+            padding: 10px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
        <asp:Repeater ID="Repeater2" runat="server">
@@ -9,7 +21,7 @@
                                                 <div class="row product-bg">
                                                     <div class="col-sm-6 product-content">
                                                         <div class="product-images">
-                                                            <img src="img/<%# Eval("Product_Image")%>" alt="computer">
+                                                            <img class="img-fluid" src="../Product_Images/<%# Eval("Product_Image")%>" alt="computer">
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 product-content">
@@ -63,7 +75,7 @@
                                      
                                                                 <asp:Button 
                                                                     id="add2cart"
-                                                                   class="addtocart-btn btn-big"
+                                                                   class="addtocart_btn"
                                                                     runat="server"
                                                                     Text="Add to Cart"
                                                                      OnClick="Addtocart"

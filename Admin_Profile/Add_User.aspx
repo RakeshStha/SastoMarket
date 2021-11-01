@@ -9,91 +9,147 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-         <div class="card" style="margin: 10px; padding:25px;">
-                                    
-                 <div class="card-title ">
-                                <h1 class="text-center">Add User</h1>
+    <div class="container p-5">
         <div class="form-row">
             <div class="col form-group" >
-                <label>Full Name </label>   
-                  <input type="text" class="form-control" name="fullname" ID="fullname" placeholder="Your name" runat="server"/>
+                <label>Full Name </label> 
+                <asp:TextBox ID="Fullname" runat="server"  class="form-control"  placeholder="Your name"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="Fullname" runat="server" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
 
             </div> 
             <div class="col form-group">
                 <label>Address</label>
-                  <input type="text" class="form-control" name="address" placeholder="Your Address" id="address" runat="server"/>
+                <asp:TextBox ID="Address" class="form-control" runat="server" placeholder="Your Address"></asp:TextBox>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" controlToValidate="Address" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
             </div> 
         </div> 
 
         <div class="form-row">
             <div class="col form-group" >
-                <label>Phone </label>   
-                  <input type="number" class="form-control" name="phone" ID="phone" placeholder="Your name" runat="server"/>
+                <label>Phone </label> 
+                <asp:TextBox ID="Phone" class="form-control" runat="server" placeholder="Your number"></asp:TextBox>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" controlToValidate="Phone" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
             </div> 
+        
             <div class="col form-group">
                 <label>Date of Birth</label>
-                  <input type="date" class="form-control" name="dob" ID="dob" placeholder="Your Address" runat="server"/>
+                
+                <asp:TextBox type="date" class="form-control" ID="Dob"  runat="server"></asp:TextBox>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" controlToValidate="Dob" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
             </div> 
-        </div> 
+            </div>
+     
+                
+ 
 
+        
+        <div class="row">
+        <div class="form-group col-md-6">
+            <label>Email</label>
+            <asp:TextBox ID="Email" class="form-control" placeholder="abc@gmail.com" runat="server"></asp:TextBox>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" controlToValidate="Email" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" controlToValidate="Email" runat="server" ErrorMessage="Email must contain @ !" ForeColor="Red"></asp:RegularExpressionValidator>
+        
+        </div> 
+           
+
+           
+        <div class="form-group col-md-6">
+            <div class="row">
+                <div class="form-group col-md-3">
+              <label>Country</label>
+                 <asp:DropDownList ID="Country" class="form-control" runat="server">
+                     <asp:ListItem Value="Nepal">Nepal</asp:ListItem>
+                     <asp:ListItem Value="India">India</asp:ListItem>
+                     <asp:ListItem Value="Pakistan">Pakistan</asp:ListItem>
+                    </asp:DropDownList>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" controlToValidate="Country" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
+                </div>
+                 <div class="form-group col-md-3">
+                  <label>Role</label>
+                 <asp:DropDownList ID="Role" class="form-control" runat="server">
+                     <asp:ListItem Value="User">User</asp:ListItem>
+                     <asp:ListItem Value="Admin">Admin</asp:ListItem>
+                   
+                    </asp:DropDownList>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" controlToValidate="Country" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
+                </div>
+            </div>
+            
+           
+            
+            </div> 
+             </div> 
+
+           
+      
+   
+        <!-- form-group end.//
     
         <div class="form-row">
             <div class="form-group col-md-6">
               <label>City</label>
               <input type="text" class="form-control" name="address" placeholder="Address">
             </div> 
-         
+             <div class="form-group col-md-6">
+          <label>Gender</label><br>
+                <label class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" value="Male">
+              <span class="form-check-label"> Male </span>
+            </label>
+            <label class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" value="Female">
+              <span class="form-check-label"> Female</span>
+            </label>
+            <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" value="Custom">
+                <span class="form-check-label"> Custom</span>
+              </label>
+            </div>
     
-            <div class="form-group col-md-6">
-              <label>Country</label>
-              <select id="inputState" name="country" class="form-control">
-                <option name="country"> Choose...</option>
-                  <option name="country" value="Uzbekistan">Uzbekistan</option>
-                  <option name="country" value="Russia">Russia</option>
-                  <option name="country" value="United States">United States</option>
-                  <option name="country" value="India">India</option>
-                  <option name="country" value="Afganistan">Afganistan</option>
-                  <option name="country" value="Nepal" selected="Nepal">Nepal</option>
-                  <option name="country" value="Australia" >Australia</option>
-                  <option name="country" value="China">China</option>
-              </select>
-            </div> 
+            
          
         </div>
-
+             / -->
+         <!-- form-row.// -->
+        <div class="form-row">
+        <div class="form-group col-md-6" >
+            <label>City</label>
+            <asp:TextBox ID="City"  class="form-control" runat="server" placeholder="Your City"></asp:TextBox>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" controlToValidate="City" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
+            </div> 
+        <div class="form-group col-md-6">
+            <label>Username</label>
+            <asp:TextBox ID="Username"  class="form-control" runat="server" placeholder="Username"></asp:TextBox>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" controlToValidate="Username" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
+            </div> 
+        </div>
+       
          <div class="form-row">
         <div class="form-group col-md-6" >
-            <label>Username</label>
-            <input class="form-control" name="usernames" ID="usernames" runat="server" placeholder="Username" />
-       
+           
+        <label>Password</label>
+            <asp:TextBox type="password" class="form-control" ID="Password" placeholder="******" runat="server"></asp:TextBox>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" controlToValidate="Password" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
+            
         </div> 
         <div class="form-group col-md-6">
-            <label>Password</label>
-
-             <input type="password" class="form-control" ID="password" placeholder="******"  runat="server" />
+            <label>Confirm Password</label>
+            <asp:TextBox type="password" class="form-control" ID="Password2" placeholder="******" runat="server"></asp:TextBox>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" controlToValidate="Password2" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToValidate="Password2" ErrorMessage="Password does not match !" ForeColor="Red" ValueToCompare="Password2" ControlToCompare="Password"></asp:CompareValidator>
         </div>
         </div>
-                <div class="form-row">
-                <div class="form-group col-md-6" >
-                    <label>User Role</label>
-                </div> 
-                <div class="form-group col-md-6">
-                    <div class="form-group col-md-6">
-                      <select id="" name="role" class="form-control">
-                        <option name="role"> Choose...</option>
-                          <option name="role" value="admin">Admin</option>
-                          <option name="role" value="user">User</option>
-        
-                      </select>
-                    </div> 
-                </div>
-                </div>
         <div class="form-group">
             <div class="text-center">
-                <asp:Button ID="Button2" class="btn btn-primary"  runat="server" Text="SignUp"  />
+                <asp:Button ID="Button2" class="btn btn-primary" runat="server" OnClick="Add_Click" Text="Add" />
             </div>
-            
-
         </div>
+
+      
+    </div><!--Signuo-->
+      
+    
+
 
 </asp:Content>
