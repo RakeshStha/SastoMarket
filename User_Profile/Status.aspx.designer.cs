@@ -12,5 +12,6 @@ namespace SastoMarket.User_Profile
 {
     public partial class Status
     {
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }

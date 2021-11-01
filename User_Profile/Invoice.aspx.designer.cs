@@ -12,5 +12,6 @@ namespace SastoMarket.User_Profile
 {
     public partial class Invoice
     {
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }
