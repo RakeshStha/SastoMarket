@@ -12,5 +12,6 @@ namespace SastoMarket.Admin_Profile
 {
     public partial class Total_User
     {
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
