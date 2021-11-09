@@ -48,8 +48,7 @@
             <label>Email</label>
             <asp:TextBox ID="Email" class="form-control" placeholder="abc@gmail.com" runat="server"></asp:TextBox>
              <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" controlToValidate="Email" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" controlToValidate="Email" runat="server" ErrorMessage="Email must contain @ !" ForeColor="Red"></asp:RegularExpressionValidator>
-        
+            
         </div> 
            
 
@@ -68,8 +67,8 @@
                  <div class="form-group col-md-3">
                   <label>Role</label>
                  <asp:DropDownList ID="Role" class="form-control" runat="server">
-                     <asp:ListItem Value="User">User</asp:ListItem>
-                     <asp:ListItem Value="Admin">Admin</asp:ListItem>
+                     <asp:ListItem Value="user">User</asp:ListItem>
+                     <asp:ListItem Value="admin">Admin</asp:ListItem>
                    
                     </asp:DropDownList>
                  <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" controlToValidate="Country" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>

@@ -33,6 +33,7 @@ namespace SastoMarket
             catch (Exception ex)
             {
                 Response.Write(ex.Message);
+                
             }
         }
     }
