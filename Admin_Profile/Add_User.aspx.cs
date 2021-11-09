@@ -14,8 +14,12 @@ namespace SastoMarket
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
+            if (!IsPostBack)
+            {
+                if (Session["username"] == null) Response.Redirect("../error.aspx");
+                String user = Session["username"].ToString();
+                String pass = Session["password"].ToString();
+            }
         }
 
         protected void Add_Click(object sender, EventArgs e)

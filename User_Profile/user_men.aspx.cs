@@ -13,10 +13,21 @@ namespace SastoMarket.User_Profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ProductDao mn = new ProductDao();
-            DataSet mdt = mn.GetMen();
-            Repeater2.DataSource = mdt;
-            Repeater2.DataBind();
+            if (!IsPostBack)
+            {
+                if (Session["username"] == null) Response.Redirect("../error.aspx");
+                String user = Session["username"].ToString();
+                if (Session["username"] == null) return;
+                if (Session["username"] != null)
+                {
+                    ProductDao mn = new ProductDao();
+                    DataSet mdt = mn.GetMen();
+                    Repeater2.DataSource = mdt;
+                    Repeater2.DataBind();
+                }
+
+            }
+            
         }
     }
 }

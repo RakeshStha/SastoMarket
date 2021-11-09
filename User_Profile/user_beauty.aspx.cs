@@ -13,10 +13,21 @@ namespace SastoMarket.User_Profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ProductDao ff = new ProductDao();
-            DataSet dss = ff.GetBeauty();
-            Product_Beauty.DataSource = dss;
-            Product_Beauty.DataBind();
+            if (!IsPostBack)
+            {
+                if (Session["username"] == null) Response.Redirect("../error.aspx");
+                String user = Session["username"].ToString();
+                if (Session["username"] == null) return;
+                if (Session["username"] != null)
+                {
+                    ProductDao ff = new ProductDao();
+                    DataSet dss = ff.GetBeauty();
+                    Product_Beauty.DataSource = dss;
+                    Product_Beauty.DataBind();
+                }
+
+            }
+            
         }
     }
 }

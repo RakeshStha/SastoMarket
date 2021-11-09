@@ -15,10 +15,17 @@ namespace SastoMarket.User_Profile
         string constr = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-           // if (Session["username"] == null) Response.Redirect("../error.aspx");
-            String user = Session["username"].ToString();
             if (!IsPostBack)
-                GetData();
+            {
+                if (Session["username"] == null) Response.Redirect("../error.aspx");
+                String user = Session["username"].ToString();
+                if (Session["username"] == null) return;
+                if (Session["username"] != null)
+                {
+                    GetData();
+                }
+
+            }
 
         }
         public void GetData()

@@ -25,8 +25,6 @@ namespace SastoMarket.User_Profile
 
                 GetData();
             }
-
-
         }
         public void GetData()
         {

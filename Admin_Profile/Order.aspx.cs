@@ -18,12 +18,12 @@ namespace SastoMarket.Admin_Profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          
-            //OrderDao sd = new OrderDao();
-            //DataTable dt = sd.GetOrder();
-            //GridView1.DataSource = dt;
-            //GridView1.DataBind();
-
+            if (!IsPostBack)
+            {
+                if (Session["username"] == null) Response.Redirect("../error.aspx");
+                String user = Session["username"].ToString();
+                String pass = Session["password"].ToString();
+            }
         }
 
      
