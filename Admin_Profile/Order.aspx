@@ -5,8 +5,8 @@
     <div class="container">
         <h1 class="text-center">Total Order requests</h1>
         <div class="text-center">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="oid" DataSourceID="SqlDataSource1" GridLines="Vertical">
-                <AlternatingRowStyle BackColor="#DCDCDC" />
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="oid" DataSourceID="SqlDataSource1" GridLines="None" ForeColor="#333333">
+                <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:BoundField DataField="oid" HeaderText="oid" InsertVisible="False" ReadOnly="True" SortExpression="oid" />
                     <asp:BoundField DataField="order_date" HeaderText="order_date" SortExpression="order_date" />
@@ -19,15 +19,16 @@
                     <asp:BoundField DataField="status" HeaderText="status" SortExpression="status" />
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 </Columns>
-                <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
-                <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-                <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
-                <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
-                <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                <SortedAscendingHeaderStyle BackColor="#0000A9" />
-                <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                <SortedDescendingHeaderStyle BackColor="#000065" />
+                <EditRowStyle BackColor="#7C6F57" />
+                <FooterStyle BackColor="#1C5E55" ForeColor="White" Font-Bold="True" />
+                <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#E3EAEB" />
+                <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F8FAFA" />
+                <SortedAscendingHeaderStyle BackColor="#246B61" />
+                <SortedDescendingCellStyle BackColor="#D4DFE1" />
+                <SortedDescendingHeaderStyle BackColor="#15524A" />
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MyConnection %>" DeleteCommand="DELETE FROM [orders] WHERE [oid] = @oid" InsertCommand="INSERT INTO [orders] ([order_date], [product_name], [product_type], [price], [user_names], [quantity], [total_price], [status]) VALUES (@order_date, @product_name, @product_type, @price, @user_names, @quantity, @total_price, @status)" SelectCommand="SELECT * FROM [orders]" UpdateCommand="UPDATE [orders] SET [order_date] = @order_date, [product_name] = @product_name, [product_type] = @product_type, [price] = @price, [user_names] = @user_names, [quantity] = @quantity, [total_price] = @total_price, [status] = @status WHERE [oid] = @oid">
                 <DeleteParameters>
