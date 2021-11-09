@@ -62,10 +62,10 @@
                     </li>
                      
                     <li class="nav-items">
-                      <a href="#" class="nav-link">
+                      <asp:LinkButton class="nav-link" runat="server" OnClick="Unnamed_Click">
                         <i class="fas fa-sign-out-alt"></i>
                         <span class="text">Logout</span>
-                      </a>
+                      </asp:LinkButton>
                     </li>
                     <li class="nav-items">    
                        <span class="text"></span>

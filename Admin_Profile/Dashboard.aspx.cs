@@ -18,36 +18,74 @@ namespace SastoMarket.Admin_Profile
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        string constr = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            //OrderDao sd = new OrderDao();
-            //DataTable dt = sd.GetOrder();
-            //GridView1.DataSource = dt;
-            //GridView1.DataBind();
-
-           
-
             if (!IsPostBack)
             {
-               // if (Session["username"] == null) Response.Redirect("../error.aspx");
-                //String user = Session["username"].ToString();
-                //String pass = Session["password"].ToString();
+                if (Session["username"] == null) Response.Redirect("../error.aspx");
+                String user = Session["username"].ToString();
+                String pass = Session["password"].ToString();
 
-                //if (Session["username"] != null)
-                //{
-                  //  admin.Text = Session["username"].ToString();
+                if (Session["username"] != null)
+                {
+                   
+                    GetData();
 
 
+                    Repeater1.DataBind();
 
 
-                    //AccountDao sd = new AccountDao();
-                    //DataTable dt = sd.TotalAccount();
+                    SqlConnection con = new SqlConnection(constr);
+                    string strQuery = "SELECT COUNT(*) AS users FROM user_account";
+                    string pro = "SELECT COUNT(*) AS products FROM Product";
+                    string adm = "SELECT COUNT(*) AS contacts FROM contact";
+                    string odr = "SELECT COUNT(*) AS orders FROM orders";
 
-                    //ttlusr.Text = dt.Rows[0]["user"].ToString();
+                    con.Open();
 
+                    //For total user count
+                    SqlCommand cmd = new SqlCommand(strQuery, con);
+                    SqlDataAdapter OleDbDa = new SqlDataAdapter(cmd);
+                    DataTable dtData = new DataTable();
+                    OleDbDa.Fill(dtData);
+                    ttlusr.Text = dtData.Rows[0]["users"].ToString();
+
+                    //For total product count
+                    SqlCommand product = new SqlCommand(pro, con);
+                    SqlDataAdapter dta = new SqlDataAdapter(product);
+                    DataTable Data = new DataTable();
+                    dta.Fill(Data);
+                    ttlpdt.Text = Data.Rows[0]["products"].ToString();
+
+                    //For total contact count
+                    SqlCommand contact = new SqlCommand(adm, con);
+                    SqlDataAdapter addta = new SqlDataAdapter(contact);
+                    DataTable Datadm = new DataTable();
+                    addta.Fill(Datadm);
+                    contactmsg.Text = Datadm.Rows[0]["contacts"].ToString();
+
+                    //For total orders count
+                    SqlCommand order = new SqlCommand(odr, con);
+                    SqlDataAdapter ord = new SqlDataAdapter(order);
+                    DataTable ords = new DataTable();
+                    ord.Fill(ords);
+                    orderss.Text = ords.Rows[0]["orders"].ToString();
+
+                    con.Close();
                 }
-
             }
+        }
+        private void GetData()
+        {
+            using (SqlConnection con = new SqlConnection(constr))
+            {
+                string user = Session["username"].ToString();
+                SqlDataAdapter da = new SqlDataAdapter("Select * from user_account where username = '" + user + "'", con);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                Repeater1.DataSource = ds;
+            }
+        }
     }
 }
