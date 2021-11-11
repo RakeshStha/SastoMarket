@@ -15,8 +15,7 @@
             <div class="form-group">
                 <input type="email" class="form-control" id="Email" placeholder="Enter Your Email" runat="server">
                  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="Email" runat="server" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" controlToValidate="Email" runat="server" ErrorMessage="Email must contain @ !" ForeColor="Red"></asp:RegularExpressionValidator>
-            </div>
+              </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="Fullname"   placeholder="Enter Your Full Name" runat="server">
                  <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="Fullname" runat="server" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>

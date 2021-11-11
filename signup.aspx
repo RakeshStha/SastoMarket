@@ -65,8 +65,7 @@
             <label>Email</label>
             <asp:TextBox ID="Email" class="form-control" placeholder="abc@gmail.com" runat="server"></asp:TextBox>
              <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" controlToValidate="Email" ErrorMessage="This field is required !" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" controlToValidate="Email" runat="server" ErrorMessage="Email must contain @ !" ForeColor="Red"></asp:RegularExpressionValidator>
-        
+           
         </div> 
            
 

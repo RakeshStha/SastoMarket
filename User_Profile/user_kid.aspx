@@ -6,9 +6,15 @@
          .active_kid{
             color:#f49304;
         }
+         .kid_ads img{
+            width:100%;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+     <div class="container-fluid kid_ads">
+        <img class="img-fluid" src="../img/kids_ads.png" />
+    </div>
     <div class="collection-container"> 
                 <h1 class="text-center">Kid</h1>
                     <div class="row">

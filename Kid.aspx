@@ -9,11 +9,17 @@
         .active_kid{
             color:#f49304;
         }
+        .kid_ads img{
+            width:100%;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="container-fluid kid_ads">
+        <img class="img-fluid" src="img/kids_ads.png" />
+    </div>
              <div class="collection-container"> 
-                <h1 class="text-center">Kid</h1>
+                <h1 class="text-center m-3">Kid Clothes</h1>
                     <div class="row">
                           <asp:Repeater ID="Repeater2" runat="server">
                                <ItemTemplate>

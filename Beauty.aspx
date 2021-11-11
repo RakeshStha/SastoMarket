@@ -10,12 +10,19 @@
             color:#f49304;
         }
         .collection-container{
-    padding: 20px;
-}
+            padding: 20px;
+           }
+        .ads img{
+            width:100%;
+            height:450px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <!--Beuty body-->
+     <div class="container-fluid ads">
+                <img class="img-fluid" src="img/beauty_ads.jpg" />
+            </div>
 
     
         <div class="collection-container"> 

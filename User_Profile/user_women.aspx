@@ -6,10 +6,17 @@
          .active_women{
             color:#f49304;
         }
+         .ads img{
+            width:100%;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-      <h1 class="text-center">Women</h1>
+            <div class="container-fluid ads">
+                <img class="img-fluid" src="../img/women_ads.jpeg" />
+            </div>
+
+      <h1 class="text-center m-4">Women</h1>
             <div class="row">
                
                   <asp:Repeater ID="Product_Women" runat="server">

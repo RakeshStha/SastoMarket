@@ -9,10 +9,16 @@
         .active_men{
             color:#f49304;
         }
+          .ads img{
+            width:100%;
+            height:500px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- 
+            <div class="container-fluid ads">
+                <img class="img-fluid" src="img/men_ads.jpg" />
+            </div>
         <div class="collection-container"> 
         <h1 class="text-center">Men</h1>
             <div class="row">

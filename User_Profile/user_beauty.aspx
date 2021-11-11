@@ -6,9 +6,16 @@
      .active_beauty{
             color:#f49304;
         }
+     .ads img{
+            width:100%;
+            height:450px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+     <div class="container-fluid ads">
+                <img class="img-fluid" src="../img/beauty_ads.jpg" />
+            </div>
    <div class="collection-container"> 
              <h1 class="text-center">Beauty</h1>
             <div class="row">

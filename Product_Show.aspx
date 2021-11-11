@@ -5,6 +5,27 @@
      <link rel="stylesheet" href="css/footer.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                                          <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                            <div class="modal-content">
+                                                                              <div class="modal-header">
+                                                                                <h5 class="modal-title" ><h3 class="text-danger"><i class="fa fa-frown-o" aria-hidden="true"></i>  Oops!........</h3></h5>
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                  <span aria-hidden="true">&times;</span>
+                                                                                </button>
+                                                                              </div>
+                                                                              <div class="modal-body">
+                                                                                <p class="text-center text-danger" style="font-size:20px;"> <b>Please create your account to add item to your cart.</b>
+                                                                                  <h4 class="text-center text-danger"><b>Thank You!</b></h4>
+                                                                                    </p>
+                                                                              </div>
+                                                                              <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                <button type="button" class="btn btn-primary" id="login">Login</button>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
   
                             <asp:Repeater ID="Repeater2" runat="server">
                                     <ItemTemplate>
@@ -54,7 +75,34 @@
                                                                 <button type="submit" class="addtocart-btn qty"> +</button>
                                                             </div>
                                                             <div class="addtocart-big-btn">
-                                                                <button type="submit" class="addtocart-btn btn-big">Add to cart</button>
+                                                              
+                                                                <!-- Button trigger modal -->
+                                                                <button class="addtocart-btn btn-big" data-toggle="modal" data-target="#Modal">Buy Now </button>
+
+
+                                                                     <!-- Modal -->
+                                                                        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                                          <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                            <div class="modal-content">
+                                                                              <div class="modal-header">
+                                                                                <h5 class="modal-title" ><h3 class="text-danger"><i class="fa fa-frown-o" aria-hidden="true"></i>  Oops!........</h3></h5>
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                  <span aria-hidden="true">&times;</span>
+                                                                                </button>
+                                                                              </div>
+                                                                              <div class="modal-body">
+                                                                                <p class="text-center text-danger" style="font-size:20px;"> <b>Please create your account to add item to your cart.</b>
+                                                                                  <h4 class="text-center text-danger"><b>Thank You!</b></h4>
+                                                                                    </p>
+                                                                              </div>
+                                                                              <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                <button type="button" class="btn btn-primary" id="login">Login</button>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                <!--More information-->
                                                             </div>
                                                     </div>
                                                 </div>

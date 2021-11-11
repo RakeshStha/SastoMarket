@@ -14,7 +14,7 @@ namespace SastoMarket
         protected void Page_Load(object sender, EventArgs e)
         {
             ProductDao mn = new ProductDao();
-            DataSet mdt = mn.GetMen();
+            DataSet mdt = mn.GetWomen();
             Product_Women.DataSource = mdt;
             Product_Women.DataBind();
         }

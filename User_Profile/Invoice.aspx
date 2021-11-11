@@ -39,7 +39,8 @@
                                             <div><strong>Price:</strong>  <%# Eval("price") %></div>
                                             <div><strong>Quantity:</strong>  <%# Eval("quantity") %></div>
                                             <div><strong>Total Price:</strong>  <%# Eval("total_price") %></div><br />
-                                           <div class="text-center"><asp:LinkButton ID="LinkButton1"  CommandName="Delete" OnClientClick="javascript:if(!confirm('Delete this information? This will delete permanently'))return false;" CommandArgument='<%# Eval("oid") %>' runat="server" style="background-color:darkred; padding:8px; " ForeColor="White" Font-Bold="True" BorderColor="Black"  >Delete</asp:LinkButton></div>
+                                           <div class="text-center">
+                                               <asp:LinkButton ID="LinkButton1"  CommandName="Delete" OnClientClick="javascript:if(!confirm('Delete this information? This will delete permanently'))return false;" CommandArgument='<%# Eval("oid") %>' runat="server" style="background-color:darkred; border-radius:5px; padding:8px; " ForeColor="White" Font-Bold="True" BorderColor="Black"  >Delete</asp:LinkButton></div>
                                             </div>
                                             </div>
           
