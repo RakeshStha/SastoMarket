@@ -31,8 +31,10 @@
                                                 <div class="card-block text-center">
                                                   <img class="img-fluid" src="Product_Images/<%#Eval("Product_Image") %>" style="height:200px; width:50%">   
                                                   <h4 class="card-title mt-2"><%# Eval("Product_Name")%></h4>
-                                                  <p class="card-text"><strong class="animated-text">Rs <%# Eval("Price")%></strong></p>   
-                                                   
+                                                  <p class="card-text"><strong class="animated-text">Rs <%# Eval("Price")%></strong><br />
+                                                       <img class="img-fluid" src="img/rating3.jpg" style="height:25px; width:100px;"/>
+                                                  </p>   
+                                                  
                                                   <button type="submit" class="btn btn-success m-3">Buy Now</button>
                                                 </div>        
                                               </div>

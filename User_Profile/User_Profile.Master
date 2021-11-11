@@ -216,6 +216,9 @@
                        <li class="nav-item">
                         <a class="nav-link" href="History.aspx"><span class="active_history" style="font-weight:600; font-size:18px;">History</span></a>
                       </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="FeedBack.aspx"><span class="active_feedback" style="font-weight:600; font-size:18px;">Feedback</span></a>
+                      </li>
                       
                     </ul>
                       <asp:Button ID="Button1" runat="server" Text="LOGOUT" style="padding: 10px; border:none; border-radius:5px; background-color: darkred; color:white; font-size:16px; font-weight:600;" OnClick="Button1_Click"/>

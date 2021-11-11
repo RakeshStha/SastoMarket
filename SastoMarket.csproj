@@ -92,6 +92,7 @@
     <Content Include="Men.aspx" />
     <Content Include="Product_Show.aspx" />
     <Content Include="signup.aspx" />
+    <Content Include="User_Profile\FeedBack.aspx" />
     <Content Include="User_Profile\History.aspx" />
     <Content Include="User_Profile\Invoice.aspx" />
     <Content Include="User_Profile\Status.aspx" />
@@ -245,6 +246,13 @@
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Profile\History.aspx.cs">
       <DependentUpon>History.aspx</DependentUpon>
