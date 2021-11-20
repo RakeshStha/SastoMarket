@@ -53,7 +53,7 @@
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <asp:Label ID="Price" runat="server" Text='<%# Eval("Price")%>'></asp:Label>
-                                                                      
+                             
                                                                     </div>
                                                                 </div>
                           

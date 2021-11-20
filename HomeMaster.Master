@@ -147,11 +147,11 @@
                       <a href="home.aspx"><i class="bx bx-home mr-3"></i> Home</a>
                     </li>
                      <li>
-                      <a href="collection.aspx"><i class="bx bx-carousel mr-3"></i>All Products</a>
+                      <a href="home.aspx"><i class="bx bx-carousel mr-3"></i>All Products</a>
                     </li>
                     
                     <li>
-                      <a href="login.aspx"><i class="bx bx-crown mr-3"></i> Login</a>
+                      <a href="Login.aspx"><i class="bx bx-crown mr-3"></i> Login</a>
                     </li>
                     
                     <li>
@@ -162,25 +162,25 @@
                   <h6 class="text-uppercase mb-1">Categories</h6>
                   <ul class="list-unstyled components mb-3">
                      <li>
-                      <a href="fashion.aspx">Fashion</a>
+                      <a href="home.aspx">All catagories</a>
                     </li>
                      <li>
-                      <a href="gadgets.aspx">Gadgets</a>
+                      <a href="Men.aspx">Men</a>
                     </li>
                     <li>
-                      <a href="kitchen.aspx">Kitchens</a>
+                      <a href="Women.aspx">Women</a>
                     </li>
                     <li>
-                      <a href="electronics.aspx">Electronics</a>
+                      <a href="Kid.aspx">Kid</a>
                     </li>
                     
                   </ul>
 
                   <ul class="social-icons">
-                    <li><a href="#" target="_blank" title=""><i class="bx bxl-facebook-square"></i></a></li>
-                    <li><a href="#" target="_blank" title=""><i class="bx bxl-twitter"></i></a></li>
-                    <li><a href="#" target="_blank" title=""><i class="bx bxl-linkedin"></i></a></li>
-                    <li><a href="#" target="_blank" title=""><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/beginner.unknown" target="_blank" title=""><i class="bx bxl-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/BeginnerUnknown" target="_blank" title=""><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rakesh-shrestha-180171186/" target="_blank" title=""><i class="bx bxl-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/rks.stha/" target="_blank" title=""><i class="bx bxl-instagram"></i></a></li>
                   </ul>
                 </nav>
 
