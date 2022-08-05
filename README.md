@@ -2,6 +2,10 @@
 
 Business Logic layer C# E-commerce Web Application
 
+# UI/UX Design
+
+Demo Figma: https://www.figma.com/proto/cZCs8wwj8jJSm7NQouEkTA/SastoMarket-Demo?node-id=21%3A140&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=6%3A2
+
 # User credentials for tester
 
 ````````````````````````````````````````
