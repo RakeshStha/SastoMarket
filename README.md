@@ -5,7 +5,7 @@ Business Logic layer C# E-commerce Web Application
 # User credentials for tester
 
 ````````````````````````````````````````
-`    #  	|  Username   |  Password    `
+`      	|  Username   |  Password    `
 `--------------------------------------`
 ` Admin	  |  admin	    |  admin       `
 `--------------------------------------`
